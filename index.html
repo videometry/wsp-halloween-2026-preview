@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Widespread Panic Halloween 2026 — Client Executive Preview (39 Bespoke 720p Reels + 24 4K UHD Style Frames)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      background: #07060a;
+      color: #f2e9d8;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 28px 36px 60px 36px;
+    }
+    header {
+      border-bottom: 1px solid #2b2438;
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: #2c1d11;
+      color: #ffbe66;
+      border: 1px solid #6e4823;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+      color: #ffcc66;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #b9ad99;
+      line-height: 1.5;
+      max-width: 1280px;
+      margin-bottom: 16px;
+    }
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 16px 0 18px 0;
+    }
+    .stat-box {
+      background: #120f19;
+      border: 1px solid #2d253b;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .stat-box .val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffd479;
+    }
+    .stat-box .lbl {
+      font-size: 11px;
+      color: #9e9382;
+      margin-top: 2px;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn, .util-btn {
+      cursor: pointer;
+      background: #171321;
+      color: #d8ccb8;
+      border: 1px solid #3a304c;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-btn.extra-btn {
+      background: #110f17;
+      color: #8d829e;
+      border-style: dashed;
+      border-color: #352e45;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #332414;
+      color: #ffd275;
+      border-color: #ffaa33;
+      border-style: solid;
+    }
+    .util-btn.active {
+      background: #173222;
+      color: #8df59b;
+      border-color: #3cc95c;
+    }
+    .util-btn.link-btn {
+      background: #1d182b;
+      color: #cbb8ff;
+      border-color: #544185;
+    }
+    .util-btn.link-btn:hover {
+      background: #2b2240;
+      color: #e2d6ff;
+    }
+    .circle-section {
+      margin-bottom: 46px;
+    }
+    .circle-banner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-left: 5px solid #ff9933;
+      padding: 12px 18px;
+      background: #120f18;
+      margin-bottom: 18px;
+      border-radius: 0 8px 8px 0;
+    }
+    .circle-banner h2 {
+      margin: 0 0 4px 0;
+      font-size: 18px;
+      color: #fff4df;
+    }
+    .banner-narrative {
+      font-size: 12.5px;
+      color: #bdb09c;
+      max-width: 980px;
+      line-height: 1.45;
+    }
+    .banner-meta {
+      font-size: 11.5px;
+      color: #ffca70;
+      background: #211912;
+      border: 1px solid #4c3720;
+      padding: 5px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #13101a;
+      border: 1px solid #2a2336;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.55);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-top8 {
+      border-color: #6b4c23;
+      box-shadow: 0 6px 24px rgba(255, 170, 51, 0.14);
+    }
+    .frame-card {
+      cursor: zoom-in;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .frame-card:hover {
+      transform: translateY(-2px);
+      border-color: #ffaa33;
+    }
+    .card-header {
+      padding: 12px 16px 8px 16px;
+    }
+    .badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .badge {
+      display: inline-block;
+      background: #231c2e;
+      color: #d8c8f0;
+      border: 1px solid #45375c;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      text-transform: uppercase;
+    }
+    .badge-gold {
+      background: #332210;
+      color: #ffd070;
+      border-color: #805622;
+    }
+    .badge-uhd {
+      background: #142824;
+      color: #7bf0d2;
+      border-color: #296658;
+    }
+    .size-pill {
+      font-size: 10.5px;
+      color: #8f8474;
+    }
+    .card h3 {
+      margin: 3px 0;
+      font-size: 15px;
+      color: #fff6e6;
+    }
+    .card p {
+      margin: 3px 0 8px 0;
+      font-size: 12px;
+      color: #a39887;
+      line-height: 1.4;
+    }
+    .media-wrap {
+      position: relative;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+    video, .frame-card img {
+      width: 100%;
+      display: block;
+      background: #000;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .crop-guide-top, .crop-guide-bottom {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 10%;
+      background: rgba(255, 60, 40, 0.28);
+      color: #ffd8d0;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 4;
+    }
+    .crop-guide-top {
+      top: 0;
+      border-bottom: 1.5px dashed #ff9933;
+    }
+    .crop-guide-bottom {
+      bottom: 0;
+      border-top: 1.5px dashed #ff9933;
+    }
+    body.show-crop-guide .crop-guide-top,
+    body.show-crop-guide .crop-guide-bottom {
+      display: flex;
+    }
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 4, 8, 0.94);
+      z-index: 9999;
+      padding: 28px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #lightbox.open {
+      display: flex;
+    }
+    .lb-bar {
+      width: 100%;
+      max-width: 1600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      color: #ffd275;
+    }
+    .lb-media {
+      position: relative;
+      max-width: 1600px;
+      max-height: 82vh;
+      border: 1px solid #4a3b2c;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .lb-media img {
+      display: block;
+      max-width: 100%;
+      max-height: 82vh;
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Videometry Visuals LLC • Dustin Klein • 720p Creative Review Package (Oct 21–22, 2026)</div>
+    <h1>WIDESPREAD PANIC HALLOWEEN 2026 — BEST OF SHOW CLIENT PREVIEW (720p @ 24 FPS)</h1>
+    <div class="subtitle">
+      Curated for <strong>Paul Hoffman</strong>, <strong>Valentine Cranford</strong>, and <strong>Andrew Smith (Pulse Lighting)</strong>.<br/>
+      Presenting our <strong>39 Bespoke, High-Realism Seamless Video Loops in 1280×720 (720p @ 24.00 fps, Video-Only)</strong> — featuring the <strong>7 Full-Length 10-to-12-Step Gluttony Master Sagas</strong>, <strong>8 Bourbon Street Banquet &amp; Bacchus Reels</strong>, <strong>8 Heresy Snake Woman &amp; Cathedral Reels</strong>, <strong>8 Fraud Snake Oil &amp; Masquerade Reels</strong>, and <strong>8 New Orleans Sacred Geometry Vèvè Portal Reels</strong> — for creative sign-off prior to <strong>4K UHD (3840×2160)</strong> Topaz upscaling.
+    </div>
+    <div class="stats-strip">
+      <div class="stat-box">
+        <div class="val">1280×720 @ 24.00 fps</div>
+        <div class="lbl">720p H.264 Review Proxies • Pre-4K UHD Upscale Sign-Off</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">39 Bespoke Main Reels</div>
+        <div class="lbl">15 Gluttony • 8 Heresy • 8 Fraud • 8 Sacred Geometry Vèvè</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">100% Cohesive AI Cinema</div>
+        <div class="lbl">VV Flow Long Loop Assembler • Hard-Cut Seams • Audio=0</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">9:4 Wall Center-Safe</div>
+        <div class="lbl">Framed for UNO Arena V3 (3888×1728) • Toggle Guide Below</div>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="setView('TOP_PICKS', this)">★ Top 11 Director's Cut (Quick Tour)</button>
+        <button class="filter-btn" onclick="setView('ALL_MAIN', this)">All 39 Bespoke Main Reels</button>
+        <button class="filter-btn" onclick="setView('GLUTTONY', this)">Circle III: Gluttony (15 Reels + 6 4K)</button>
+        <button class="filter-btn" onclick="setView('HERESY', this)">Circle VI: Heresy (8 Reels + 6 4K)</button>
+        <button class="filter-btn" onclick="setView('FRAUD', this)">Circle VIII: Fraud (8 Reels + 6 4K)</button>
+        <button class="filter-btn" onclick="setView('VEVE_SEALS', this)">Sacred Geometry Vèvè Portals (8 Reels + 6 4K)</button>
+        <button class="filter-btn" onclick="setView('FRAMES_ONLY', this)">24 Native 4K UHD Style Frames</button>
+        <button class="filter-btn extra-btn" onclick="setView('EXTRAS', this)">+ Bonus Extras (Archival &amp; PD Studies)</button>
+      </div>
+      <div class="filter-bar">
+        <button class="util-btn" id="cropBtn" onclick="toggleCropGuide()">Toggle UNO Arena 9:4 Wall Safe-Zone (3888×1728)</button>
+        <button class="util-btn" onclick="pauseAllVideos()">Pause All Videos</button>
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="circle-section reel-section" data-circle="GLUTTONY" data-extra="false">
+    <div class="circle-banner" style="border-left-color: #ff9933;">
+      <div>
+        <h2>CIRCLE III: GLUTTONY — "THE 12-STEP MASTER SAGAS, BOURBON STREET BANQUET & FEAST OF BACCHUS"</h2>
+        <div class="banner-narrative">100% bespoke, cohesive New Orleans × Inferno visual worlds: features all 7 full-length 10-to-12-step Gluttony Master Loops from D:\WSP26_Renders (Original 12-Step Banquet, Rite of Indulgence, Hardware Crawfish Saga, Hall of the Beignet Eyes, Terminal Gluttony, The Primal Glisten, King Cake Parade) plus all 8 Bourbon Street Banquet, Bacchus & Food Cathedral loops.</div>
+      </div>
+      <span class="banner-meta">15 Bespoke 720p @ 24 fps Hard-Cut Loops (7 Full 10–12 Step Master Loops + All 8 Bourbon Banquet Suite Reels) + 6 4K Style Frames</span>
+    </div>
+    <div class="grid">
+      <div class="card reel-card card-top8" data-top="true" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 12-STEP MASTER LOOP • 91.9s (12/12 PASS • 99.2% SEAM)</span>
+            <span class="size-pill">78.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Original 12-Step Parasitic Banquet Master Loop</h3>
+          <p>Bourbon Threshold → Oyster Pass → Endless Feast → Cerberus Brass Taproom → Bruegel Kitchen → Flooded Hall → Bone Columns → Digestive Rib-Vault → Furnace Maw → Canto VI Rain Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 12-STEP MASTER LOOP • 92.6s (12/12 PASS • 99.6% SEAM)</span>
+            <span class="size-pill">79.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Rite of Indulgence — 12-Step Alchemical Banquet Loop</h3>
+          <p>The Alchemical Hero → The Ritual Pour → The Watching Eye → Mirror of Malphas → The Coven's Toast → The Sealed Covenant Seamless Loop</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 12-STEP MASTER LOOP • 92.5s (12/12 PASS • 98.6% SEAM)</span>
+            <span class="size-pill">80.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Hardware Crawfish Saga — 12-Step Cyber-Baroque Feast Loop</h3>
+          <p>Victorian Stockpot Breach → Mechanical Crawfish Violet Lasers → Crystal Chandelier Carnage → Rainbow Molasses Ham Walls → Singularity Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.3% SEAM CONFIDENCE</span>
+            <span class="size-pill">45.6 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Never-Ending Bourbon Street Banquet</h3>
+          <p>Bourbon Street Feast → Crawling Crawfish Balconies → Giant Swamp Alligator Eruption → Fresh Linen Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 91.7s 3-TIER SHOW ARC • 12 CLIPS</span>
+            <span class="size-pill">126.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Three-Scale Gluttony Show Arc (Bourbon → Bacchus → Food Cathedral)</h3>
+          <p>92-second concert progression chaining Bourbon Street Banquet → Bacchus Goddess Salon → Breathing King Cake & Gumbo Cathedral</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/06_GLUTTONY_LOOP_BOURBON_TO_BACCHUS_TO_CATHEDRAL_SHOW_ARC.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">12-STEP MASTER LOOP • 91.7s • 98.4% DIRECT SEAM</span>
+            <span class="size-pill">80.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Hall of the Beignet Eyes — 12-Step Surreal Ocular Loop</h3>
+          <p>Infinite French Quarter Hallway → The Beignet Eye → Mirror Clowns → The Gaze → Bleeding Reality → Ocular Singularity Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">10-STEP MASTER LOOP • 75.8s (10/10 PASS • 98.4% SEAM)</span>
+            <span class="size-pill">66.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Terminal Gluttony — 10-Step Feeding Frenzy & Fractal Rot Loop</h3>
+          <p>The Entrance → The Flow of Vice → The Feeding Frenzy → The Fractal Smoke → The Final Rot → Seamless Entrance Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">11-STEP MASTER LOOP • 84.2s (10/10 CONTIGUOUS PASS • 99.4% SEAM)</span>
+            <span class="size-pill">74.2 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Primal Glisten — 11-Step Macro Appetite & Predator Gaze Loop</h3>
+          <p>Hero Platter → Microscopic Drumstick Reveal → Oil Snap → Breathing Pulse → Predator's Gaze → Gold Bokeh Platter Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">11-STEP MASTER LOOP • 84.1s • MARDI GRAS FLOAT SURREALISM</span>
+            <span class="size-pill">73.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The King Cake Parade — 11-Step Flooded Quarter Float Loop</h3>
+          <p>Flooded Quarter King Cake Float → Braided Yeast & Chrome Claws → Balcony Harlequin Snatch → Fiery Sugary Maw → Pink Icing Vortex Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.6s • 96.4% SEAM CONFIDENCE</span>
+            <span class="size-pill">30.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Bacchus & The Creole Goddess of Appetite</h3>
+          <p>Baroque Mardi Gras Queen Salon → Overflowing Wine → Leviathan Alligator Jaws → Molten Gold Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.5s • 96.2% SEAM CONFIDENCE</span>
+            <span class="size-pill">49.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Food Becomes Architecture Cathedral</h3>
+          <p>Breathing King Cake Gothic Rib-Vaults → Weeping Oyster Columns → Boiling Gumbo Bayou Cerberus → Powdered Sugar Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.6s • 96.4% SEAM CONFIDENCE</span>
+            <span class="size-pill">36.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Infernal Brass Band & Fat Tuesday Parade</h3>
+          <p>Cornucopia Float → Dilating Sousaphone Gullets → Alligator Float → Flambeaux Torchlight Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.6s • 96.3% SEAM CONFIDENCE</span>
+            <span class="size-pill">33.2 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Cerberus of the Bayou Courtyard Banquet</h3>
+          <p>Mirror Courtyard → Six Glowing Eyes → Three-Headed Alligator Cerberus Eruption → Submerging Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">10-STAGE ODYSSEY • 76.5s • 96.1% SEAM CONFIDENCE</span>
+            <span class="size-pill">125.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Complete 10-Stage Bourbon Banquet & Bayou Cerberus Odyssey</h3>
+          <p>Continuous 10-clip First-Frame-to-Last-Frame camera journey across all 5 Gluttony Banquet, Brass Band & Cerberus worlds</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/07_GLUTTONY_LOOP_ODYSSEY_10_CLIP_BOURBON_BANQUET.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="GLUTTONY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">30-CLIP ANTHOLOGY • 229.4s • ALL 6 SEQUENCES</span>
+            <span class="size-pill">320.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Grand Bourbon Banquet Master Anthology (All 30 Clips)</h3>
+          <p>Complete 3.8-minute hard-cut marathon of all 6 Gluttony Bourbon Banquet & Bacchus sequences</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="01_Circle_III_Gluttony_Previews/08_GLUTTONY_MASTER_ANTHOLOGY_ALL_30_CLIPS_MEGA_REEL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section reel-section" data-circle="HERESY" data-extra="false">
+    <div class="circle-banner" style="border-left-color: #ff5e42;">
+      <div>
+        <h2>CIRCLE VI: HERESY — "THE SNAKE WOMAN, SERPENT SAINT & CATHEDRAL OF FORBIDDEN KNOWLEDGE"</h2>
+        <div class="banner-narrative">100% bespoke New Orleans Gothic sanctuary & Snake Woman suite: identity-locked Caravaggio Creole devotional oil portraits awakening with living gilded serpents, stained-glass serpent rose windows melting and re-soldering, weeping bayou chapel icons, and Gustave Doré flaming sepulchre vortexes.</div>
+      </div>
+      <span class="banner-meta">All 8 Bespoke 720p @ 24 fps Hard-Cut Loops (30/30 PASS • 96.5% Avg Seam Confidence) + 6 Native 4K UHD Style Frames</span>
+    </div>
+    <div class="grid">
+      <div class="card reel-card card-top8" data-top="true" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.6% SEAM CONFIDENCE</span>
+            <span class="size-pill">16.6 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Serpent Saint (Sacred → Corrupted → Reforming)</h3>
+          <p>Identity-locked Caravaggio Creole devotional oil portrait awakening as gilded serpents crown her halo and reform into oil paint</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 90.5s 3-TIER SHOW ARC • 12 CLIPS</span>
+            <span class="size-pill">89.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Three-Scale Heresy Show Arc (Portrait → Cathedral → Cosmic Vortex)</h3>
+          <p>91-second concert progression: Intimate Serpent Saint (Tier I) → Stained-Glass Cathedral (Tier II) → Doré Flaming Tomb Vortex (Tier III)</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/06_SNAKE_LOOP_FAVORITES_1_2_5_THREE_SCALE_SHOW_ARC.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.2s • 96.6% SEAM CONFIDENCE</span>
+            <span class="size-pill">22.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Cathedral of Forbidden Knowledge</h3>
+          <p>Decaying New Orleans Gothic sanctuary stained-glass rose window melting into living serpents and re-soldering into leadwork</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 29.8s • 96.2% SEAM CONFIDENCE</span>
+            <span class="size-pill">49.9 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Revelation of the Serpent (Doré Flaming Tomb Vortex)</h3>
+          <p>Illuminated manuscript serpent ring multiplying into a 3D Gustave Doré vortex of burning Heresy sepulchres</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 28.8s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">17.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Weeping Icon — Abandoned Louisiana Chapel</h3>
+          <p>Byzantine devotional icon weeping crimson blood and molten gold as vipers strike from the gilded halo and reseal into plaster</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.5s • 96.4% SEAM CONFIDENCE</span>
+            <span class="size-pill">30.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Heretic's Coronation & French Quarter Procession</h3>
+          <p>Marble sanctuary throne serpent coronation transitioning into a bending French Quarter wrought-iron midnight ritual</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">10-STAGE ODYSSEY • 76.2s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">85.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Complete 10-Stage Snake Woman & Forbidden Sanctuary Odyssey</h3>
+          <p>Continuous 10-clip First-Frame-to-Last-Frame journey across all 6 Heresy Snake Woman & Cathedral worlds</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/07_SNAKE_LOOP_ODYSSEY_10_CLIP_SACRED_TO_CORRUPTED.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="HERESY" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">30-CLIP ANTHOLOGY • 226.1s • ALL 6 SEQUENCES</span>
+            <span class="size-pill">223.2 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Grand Snake Woman Master Anthology (All 30 Clips)</h3>
+          <p>Complete 3.8-minute hard-cut marathon of all 6 Snake Woman Heresy sequences</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="02_Circle_VI_Heresy_Previews/08_SNAKE_MASTER_ANTHOLOGY_ALL_30_CLIPS_MEGA_REEL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section reel-section" data-circle="FRAUD" data-extra="false">
+    <div class="circle-banner" style="border-left-color: #8df56b;">
+      <div>
+        <h2>CIRCLE VIII: FRAUD — "THE SNAKE OIL MEDICINE SHOW, VOODOO APOTHECARY & CARNIVAL OF DECEPTION"</h2>
+        <div class="banner-narrative">100% bespoke New Orleans Carnival of Deception suite: French Quarter Snake Oil medicine show pitchmen multiplying into clones, Voodoo apothecary jars of trapped souls, Geryon's Mardi Gras mask-under-mask scorpion transformation, rigged riverboat casinos, and false prophetess mirror halls.</div>
+      </div>
+      <span class="banner-meta">All 8 Bespoke 720p @ 24 fps Hard-Cut Loops (30/30 PASS • 96.4% Avg Seam Confidence) + 6 Native 4K UHD Style Frames</span>
+    </div>
+    <div class="grid">
+      <div class="card reel-card card-top8" data-top="true" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.4% SEAM CONFIDENCE</span>
+            <span class="size-pill">28.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Snake Oil Medicine Show</h3>
+          <p>Tier I→III Complete Loop: French Quarter Medicine Cart Pitch → Igniting Viper Elixirs → Multiplying Salesman Clones → Fog Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 90.8s 3-TIER SHOW ARC • 12 CLIPS</span>
+            <span class="size-pill">89.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Three-Scale Fraud Show Arc (Snake Oil → Apothecary → Geryon's Mardi Gras)</h3>
+          <p>91-second concert progression: Medicine Show Pitch → Voodoo Apothecary Counterfeit Kingdom → Geryon Scorpion Masquerade</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/06_FRAUD_LOOP_SNAKE_OIL_TO_APOTHECARY_TO_GERYON_SHOW_ARC.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.5s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">21.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Voodoo Apothecary & Counterfeit Kingdom</h3>
+          <p>Candlelit Apothecary Shelves → Trapped Whispering Faces in Glass → Bursting Vipers & Ash Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 29.9s • 96.3% SEAM CONFIDENCE</span>
+            <span class="size-pill">39.9 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Geryon's Mardi Gras & The Masquerade of Liars</h3>
+          <p>19th-C. Tinted Engraving Carnival King → Porcelain Mask Peeling Under Mask → Geryon Winged Scorpion Beast → Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.5s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">28.4 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Devil's Crooked Gambling Hall</h3>
+          <p>Riverboat Casino Saloon → Reptilian Eye Wheel of Fortune → Skull Dice & Viper Dealer → Rigged Table Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">HERO LOOP • 30.7s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">23.8 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The False Prophetess & Hall of False Reflections</h3>
+          <p>Fortune Teller Crystal Orb of Burning NOLA → Multiplying Doré Serpent Mirrors → Silvered Glass Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">10-STAGE ODYSSEY • 76.5s • 96.2% SEAM CONFIDENCE</span>
+            <span class="size-pill">107.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Complete 10-Stage Carnival of Deception Odyssey</h3>
+          <p>Continuous 10-clip First-Frame-to-Last-Frame journey across all 5 Snake Oil, Apothecary, Casino & False Prophetess worlds</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/07_FRAUD_LOOP_ODYSSEY_10_CLIP_CARNIVAL_OF_DECEPTION.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="FRAUD" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">30-CLIP ANTHOLOGY • 228.6s • ALL 6 SEQUENCES</span>
+            <span class="size-pill">249.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Grand Fraud & Snake Oil Master Anthology (All 30 Clips)</h3>
+          <p>Complete 3.8-minute hard-cut marathon of all 6 Fraud Snake Oil & Malebolge sequences</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="03_Circle_VIII_Fraud_Previews/08_FRAUD_MASTER_ANTHOLOGY_ALL_30_CLIPS_MEGA_REEL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section reel-section" data-circle="VEVE_SEALS" data-extra="false">
+    <div class="circle-banner" style="border-left-color: #f2c65c;">
+      <div>
+        <h2>CROSS-CIRCLE RITUAL PORTALS: NEW ORLEANS SACRED GEOMETRY, VÈVÈ CROSSROADS & ESOTERIC SEALS</h2>
+        <div class="banner-narrative">100% bespoke New Orleans esoteric crossroads & ritual portal suite bridging all three circles: Papa Legba's Kongo Cosmogram cemetery portal, the Ouroboros Seal of Gluttony, the Damballah Stained-Glass Rosette of Heresy, the Masonic Eye Seal of Fraud, and Baron Samedi's Nine Circles Attic Grimoire.</div>
+      </div>
+      <span class="banner-meta">All 8 Bespoke 720p @ 24 fps Hard-Cut Loops (30/30 PASS • 96.1% Avg Seam Confidence) + 6 Native 4K UHD Style Frames</span>
+    </div>
+    <div class="grid">
+      <div class="card reel-card card-top8" data-top="true" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • 89.8s 3-CIRCLE TRILOGY • 96.2% SEAM CONFIDENCE</span>
+            <span class="size-pill">104.5 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Three-Circle Esoteric Seals Trilogy (Gluttony → Heresy → Fraud)</h3>
+          <p>90-second ritual bridge chaining the Ouroboros Seal of Gluttony → Damballah Stained-Glass Seal of Heresy → Masonic Eye Seal of Fraud</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/06_VEVE_LOOP_GLUTTONY_HERESY_FRAUD_ESOTERIC_SEALS_TRILOGY.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" data-top="true" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ DIRECTOR'S PICK • HIGHEST SEAM SCORE (96.8%) • 30.2s LOOP</span>
+            <span class="size-pill">28.3 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Baron Samedi's Ironwork & Nine Circles Attic Grimoire Map</h3>
+          <p>1800s French Quarter Attic Grimoire → Counter-Rotating Brass Astrolabe Rings → Nine Wrought-Iron Circles of Hell Vortex</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/05_VEVE_LOOP_SEQ05_SAMEDI_ATTIC_GRIMOIRE_INFERNO_MAP.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">SHOW OPENER PORTAL • 29.2s • 94.9% SEAM CONFIDENCE</span>
+            <span class="size-pill">20.1 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Papa Legba's Crossroads & Kongo Cosmogram Portal</h3>
+          <p>St. Louis Cemetery Crossroads Sanctuary → Turning Wrought-Iron Keys → Fiery Underworld Portal → Cornmeal Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/01_VEVE_LOOP_SEQ01_LEGBA_KONGO_COSMOGRAM_PORTAL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">CIRCLE III SEAL • 29.7s • 95.7% SEAM CONFIDENCE</span>
+            <span class="size-pill">26.8 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Esoteric Seal of Gluttony (Ouroboros & Heart-Mirror)</h3>
+          <p>1800s Ouroboros & Erzulie Heart-Mirror Grimoire → Swirling Feast → Cerberus Maw → Gold Leaf Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/02_VEVE_LOOP_SEQ02_GLUTTONY_OUROBOROS_HEART_SEAL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">CIRCLE VI SEAL • 30.2s • 96.4% SEAM CONFIDENCE</span>
+            <span class="size-pill">36.8 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Esoteric Seal of Heresy (Damballah Stained-Glass Rosette)</h3>
+          <p>Twin Damballah Serpents Rosette → Fracturing Geometry → Snake Woman Armillary Sphere → Rosette Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/03_VEVE_LOOP_SEQ03_HERESY_DAMBALLAH_ROSETTE_SEAL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">CIRCLE VIII SEAL • 29.8s • 96.5% SEAM CONFIDENCE</span>
+            <span class="size-pill">39.9 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>The Esoteric Seal of Fraud (1865 Masonic Eye & Crossroads)</h3>
+          <p>Masonic Eye Tomb-Storefront → Snake-Oil Talisman → Geryon Roulette Abyss → Limestone Reset</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/04_VEVE_LOOP_SEQ04_FRAUD_MASONIC_EYE_CROSSROADS_SEAL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">10-STAGE ODYSSEY • 76.4s • 96.3% SEAM CONFIDENCE</span>
+            <span class="size-pill">105.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Complete 10-Stage Sacred Geometry & Vèvè Seals Odyssey</h3>
+          <p>10-clip continuous First-Frame-to-Last-Frame journey across all 5 Esoteric Seal portals</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/07_VEVE_LOOP_ODYSSEY_10_CLIP_SACRED_GEOMETRY_PORTALS.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="VEVE_SEALS" data-extra="false">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">30-CLIP ANTHOLOGY • 225.5s • ALL 6 SEQUENCES</span>
+            <span class="size-pill">259.4 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Grand Sacred Geometry & Vèvè Seals Anthology (All 30 Clips)</h3>
+          <p>Complete 3.8-minute hard-cut marathon of all 6 New Orleans Sacred Geometry & Vèvè sequences</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="04_Cross_Circle_Veve_Seals_Previews/08_VEVE_MASTER_ANTHOLOGY_ALL_30_CLIPS_MEGA_REEL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section reel-section" data-circle="EXTRAS" data-extra="true">
+    <div class="circle-banner" style="border-left-color: #786c8c;">
+      <div>
+        <h2>BONUS EXTRAS (OPTIONAL B-ROLL): PUBLIC DOMAIN ENGRAVINGS & ARCHIVAL COMPOSITE STUDIES</h2>
+        <div class="banner-narrative">Secondary experimental studies built from public-domain historical engravings, woodcuts, and archival proscenium composites. Included only as optional supplemental VJ texture / B-roll extras.</div>
+      </div>
+      <span class="banner-meta">Optional Supplemental B-Roll Loops (Not Highlighted in Main Client Pitch)</span>
+    </div>
+    <div class="grid">
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • ARCHIVAL ODYSSEY • 70.2s</span>
+            <span class="size-pill">61.1 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Bourbon Street to Cerberus Jaws — 10-Step Archival Study</h3>
+          <p>Archival Bourbon Street photos to Dutch banquet still lifes, Bruegel Fat Kitchen & Cerberus engraving</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/08_WSP26_GLU_Bourbon_to_Cerberus_Odyssey_10Step_MASTER.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • COPPERPLATE STUDY • 30.4s</span>
+            <span class="size-pill">40.8 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Bruegel's Gula & Fat Kitchen Copperplate Study</h3>
+          <p>Public-domain 16th-century engraving wide-to-detail animation study</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/01_CARVING_LOOP_SEQ01_BRUEGEL_GULA_AND_FAT_KITCHEN.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • WOODCUT STUDY • 30.6s</span>
+            <span class="size-pill">37.0 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Baldung Witches Woodcut & Bruegel Alchemist Study</h3>
+          <p>Public-domain 16th-century woodcut wide-to-detail animation study</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/05_CARVING_LOOP_SEQ05_BALDUNG_WITCHES_AND_BRUEGEL_ALCHEMIST.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • ETCHING STUDY • 30.3s</span>
+            <span class="size-pill">57.9 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>1785 Italian Peep-Show & 1745 Masquerade Etching Study</h3>
+          <p>Public-domain 18th-century copperplate etching wide-to-detail animation study</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/07_CARVING_LOOP_SEQ07_ITALIAN_PEEPSHOW_AND_VERSAILLES_BALL.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • LUMA-KEY OVERLAY STEM • 38.3s</span>
+            <span class="size-pill">14.2 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Gluttony Isolated Totem Metamorphosis (#000000 Luma Key)</h3>
+          <p>Isolated foreground totem loop on pure #000000 black for live VJ luma-key layering</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/06_GLUTTONY_LOOP_LUMABLACK_TOTEM_MORPH.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card" data-top="false" data-circle="EXTRAS" data-extra="true">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge">OPTIONAL EXTRA • LUMA-KEY OVERLAY STEM • 36.2s</span>
+            <span class="size-pill">13.7 MB • 720p @ 24 fps • Audio=0</span>
+          </div>
+          <h3>Heresy Isolated Totem Metamorphosis (#000000 Luma Key)</h3>
+          <p>Isolated foreground totem loop on pure #000000 black for live VJ luma-key layering</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="05_Bonus_Archival_and_Public_Domain_Extras/06_HERESY_LOOP_LUMABLACK_TOTEM_MORPH.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  
+  <section class="circle-section frame-section" data-circle="GLUTTONY">
+    <div class="circle-banner" style="border-left-color: #ff9933;">
+      <div>
+        <h2>CIRCLE III: GLUTTONY — "THE 12-STEP MASTER SAGAS, BOURBON STREET BANQUET & FEAST OF BACCHUS" — NATIVE 4K UHD (3840×2160) HERO STYLE FRAMES</h2>
+        <div class="banner-narrative">Click any 4K UHD keyframe to inspect at full resolution. Toggle the 9:4 UNO Arena LED Wall Safe-Zone guide above to verify center-safe framing.</div>
+      </div>
+      <span class="banner-meta">6 Native 3840×2160 16:9 PNG Masters • Center-Safe for 3888×1728 V3 Raster</span>
+    </div>
+    <div class="grid frame-grid">
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Bourbon_Street_Feast.jpg', 'Bourbon Street Midnight Banquet Portal', 'TIER I • CALM ENTRY (3840×2160) • 10.0 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER I • CALM ENTRY (3840×2160)</span>
+            <span class="size-pill">10.0 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Bourbon Street Midnight Banquet Portal</h3>
+          <p>Opulent Creole banquet table stretching down rain-slicked Bourbon Street under gaslight and wrought-iron balconies.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Bourbon_Street_Feast.jpg" alt="Bourbon Street Midnight Banquet Portal" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR01_KEYFRAME03_Bourbon_Street_Alligator_Transformation.jpg', 'Bourbon Street Alligator Leviathan Eruption', 'TIER III • PEAK TRANSFORMATION (3840×2160) • 9.3 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • PEAK TRANSFORMATION (3840×2160)</span>
+            <span class="size-pill">9.3 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Bourbon Street Alligator Leviathan Eruption</h3>
+          <p>The banquet table splits into a colossal Louisiana swamp alligator lunging down the center-safe corridor.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR01_KEYFRAME03_Bourbon_Street_Alligator_Transformation.jpg" alt="Bourbon Street Alligator Leviathan Eruption" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Bacchus_Goddess_Of_Appetite_Feast.jpg', 'Bacchus & The Creole Goddess of Appetite', 'TIER I • BAROQUE SALON (3840×2160) • 9.1 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER I • BAROQUE SALON (3840×2160)</span>
+            <span class="size-pill">9.1 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Bacchus & The Creole Goddess of Appetite</h3>
+          <p>Candlelit French Quarter salon overflowing with ruby claret, crawfish towers, and gilded Mardi Gras regalia.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Bacchus_Goddess_Of_Appetite_Feast.jpg" alt="Bacchus & The Creole Goddess of Appetite" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Food_Architecture_Cathedral_Feast.jpg', 'The Cathedral of Living Food Architecture', 'TIER II • PARASITIC ARCHITECTURE (3840×2160) • 12.6 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • PARASITIC ARCHITECTURE (3840×2160)</span>
+            <span class="size-pill">12.6 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Cathedral of Living Food Architecture</h3>
+          <p>Gothic rib-vaults of glazed brioche, oyster-shell columns, and stained-glass citrus windows.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Food_Architecture_Cathedral_Feast.jpg" alt="The Cathedral of Living Food Architecture" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Infernal_Brass_Band_Cornucopia.jpg', 'Infernal Brass Band & Fat Tuesday Cornucopia Float', 'TIER II • PARADE ESCALATION (3840×2160) • 9.2 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • PARADE ESCALATION (3840×2160)</span>
+            <span class="size-pill">9.2 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Infernal Brass Band & Fat Tuesday Cornucopia Float</h3>
+          <p>Gilded brass sousaphones and flambeaux torches marching down a misty French Quarter street.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Infernal_Brass_Band_Cornucopia.jpg" alt="Infernal Brass Band & Fat Tuesday Cornucopia Float" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="GLUTTONY" onclick="openLightbox('01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR05_KEYFRAME03_Courtyard_Three_Headed_Bayou_Cerberus.jpg', 'Three-Headed Bayou Alligator Cerberus', 'TIER III • CANTO VI CLIMAX (3840×2160) • 8.3 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • CANTO VI CLIMAX (3840×2160)</span>
+            <span class="size-pill">8.3 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Three-Headed Bayou Alligator Cerberus</h3>
+          <p>Dante's Cerberus reimagined as a three-headed armored bayou alligator erupting from a flooded New Orleans courtyard.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="01_Circle_III_Gluttony_Previews/UHD_3840x2160_DIR05_KEYFRAME03_Courtyard_Three_Headed_Bayou_Cerberus.jpg" alt="Three-Headed Bayou Alligator Cerberus" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section frame-section" data-circle="HERESY">
+    <div class="circle-banner" style="border-left-color: #ff5e42;">
+      <div>
+        <h2>CIRCLE VI: HERESY — "THE SNAKE WOMAN, SERPENT SAINT & CATHEDRAL OF FORBIDDEN KNOWLEDGE" — NATIVE 4K UHD (3840×2160) HERO STYLE FRAMES</h2>
+        <div class="banner-narrative">Click any 4K UHD keyframe to inspect at full resolution. Toggle the 9:4 UNO Arena LED Wall Safe-Zone guide above to verify center-safe framing.</div>
+      </div>
+      <span class="banner-meta">6 Native 3840×2160 16:9 PNG Masters • Center-Safe for 3888×1728 V3 Raster</span>
+    </div>
+    <div class="grid frame-grid">
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR01_STAGE01_Serpent_Saint_Sacred_Slumber.jpg', 'The Serpent Saint — Sacred Candlelit Slumber', 'TIER I • CALM DEVOTIONAL ENTRY (3840×2160) • 9.7 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER I • CALM DEVOTIONAL ENTRY (3840×2160)</span>
+            <span class="size-pill">9.7 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Serpent Saint — Sacred Candlelit Slumber</h3>
+          <p>Museum-grade Caravaggio chiaroscuro oil portrait framed in ornate tarnished New Orleans baroque gold leaf.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR01_STAGE01_Serpent_Saint_Sacred_Slumber.jpg" alt="The Serpent Saint — Sacred Candlelit Slumber" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR01_STAGE03_Serpent_Saint_Corrupted_Apotheosis.jpg', 'The Serpent Saint — Living Medusa Apotheosis', 'TIER III • PEAK APOTHEOSIS (3840×2160) • 8.9 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • PEAK APOTHEOSIS (3840×2160)</span>
+            <span class="size-pill">8.9 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Serpent Saint — Living Medusa Apotheosis</h3>
+          <p>Gilded temple vipers uncoil from the Saint's crown as her eyes ignite with forbidden amber fire.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR01_STAGE03_Serpent_Saint_Corrupted_Apotheosis.jpg" alt="The Serpent Saint — Living Medusa Apotheosis" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR02_STAGE01_Cathedral_Sacred_Stained_Glass.jpg', 'The Cathedral of Forbidden Knowledge', 'TIER II • SANCTUARY NAVE (3840×2160) • 9.4 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • SANCTUARY NAVE (3840×2160)</span>
+            <span class="size-pill">9.4 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Cathedral of Forbidden Knowledge</h3>
+          <p>Towering New Orleans Gothic cathedral nave with a glowing stained-glass serpent rose window and open grimoire altar.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR02_STAGE01_Cathedral_Sacred_Stained_Glass.jpg" alt="The Cathedral of Forbidden Knowledge" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR03_STAGE01_Heretics_Coronation_Throne.jpg', 'The Heretic&#39;s Coronation Throne', 'TIER II • RITUAL THRONE (3840×2160) • 8.7 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • RITUAL THRONE (3840×2160)</span>
+            <span class="size-pill">8.7 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Heretic's Coronation Throne</h3>
+          <p>Symmetrical marble sanctuary throne flanked by burning iron braziers and coiling bronze serpents.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR03_STAGE01_Heretics_Coronation_Throne.jpg" alt="The Heretic's Coronation Throne" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR05_STAGE03_Revelation_Dantes_Heresy_Inferno_Tunnel.jpg', 'Gustave Doré Flaming Sepulchre Tunnel', 'TIER III • CANTO X COSMIC VORTEX (3840×2160) • 15.5 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • CANTO X COSMIC VORTEX (3840×2160)</span>
+            <span class="size-pill">15.5 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Gustave Doré Flaming Sepulchre Tunnel</h3>
+          <p>Counter-rotating concentric rings of engraved serpents and burning stone tombs descending into Circle VI.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR05_STAGE03_Revelation_Dantes_Heresy_Inferno_Tunnel.jpg" alt="Gustave Doré Flaming Sepulchre Tunnel" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="HERESY" onclick="openLightbox('02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR06_STAGE01_Weeping_Icon_Abandoned_Chapel.jpg', 'The Weeping Icon — Abandoned Louisiana Chapel', 'TIER I • BAYOU CHAPEL (3840×2160) • 10.5 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER I • BAYOU CHAPEL (3840×2160)</span>
+            <span class="size-pill">10.5 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Weeping Icon — Abandoned Louisiana Chapel</h3>
+          <p>Cracked plaster devotional icon weeping crimson and molten gold in a candlelit cypress chapel.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="02_Circle_VI_Heresy_Previews/UHD_3840x2160_DIR06_STAGE01_Weeping_Icon_Abandoned_Chapel.jpg" alt="The Weeping Icon — Abandoned Louisiana Chapel" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section frame-section" data-circle="FRAUD">
+    <div class="circle-banner" style="border-left-color: #8df56b;">
+      <div>
+        <h2>CIRCLE VIII: FRAUD — "THE SNAKE OIL MEDICINE SHOW, VOODOO APOTHECARY & CARNIVAL OF DECEPTION" — NATIVE 4K UHD (3840×2160) HERO STYLE FRAMES</h2>
+        <div class="banner-narrative">Click any 4K UHD keyframe to inspect at full resolution. Toggle the 9:4 UNO Arena LED Wall Safe-Zone guide above to verify center-safe framing.</div>
+      </div>
+      <span class="banner-meta">6 Native 3840×2160 16:9 PNG Masters • Center-Safe for 3888×1728 V3 Raster</span>
+    </div>
+    <div class="grid frame-grid">
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Snake_Oil_Salesman_Pitch.jpg', 'The French Quarter Snake Oil Medicine Show', 'TIER I • STREET THRESHOLD (3840×2160) • 8.7 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER I • STREET THRESHOLD (3840×2160)</span>
+            <span class="size-pill">8.7 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The French Quarter Snake Oil Medicine Show</h3>
+          <p>Gaslit 19th-century New Orleans medicine cart draped in velvet banners and glowing emerald elixir bottles.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Snake_Oil_Salesman_Pitch.jpg" alt="The French Quarter Snake Oil Medicine Show" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR01_KEYFRAME03_Snake_Oil_Infernal_Altar_And_Clones.jpg', 'Multiplying Charlatan Clones & Viper Altar', 'TIER III • PEAK DECEPTION (3840×2160) • 9.0 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • PEAK DECEPTION (3840×2160)</span>
+            <span class="size-pill">9.0 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Multiplying Charlatan Clones & Viper Altar</h3>
+          <p>The medicine stage fractures into infinite multiplying showmen and glowing vipers bursting from glass jars.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR01_KEYFRAME03_Snake_Oil_Infernal_Altar_And_Clones.jpg" alt="Multiplying Charlatan Clones & Viper Altar" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Voodoo_Apothecary_Shelves.jpg', 'The Voodoo Apothecary & Counterfeit Kingdom', 'TIER II • APOTHECARY PARLOUR (3840×2160) • 8.3 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • APOTHECARY PARLOUR (3840×2160)</span>
+            <span class="size-pill">8.3 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Voodoo Apothecary & Counterfeit Kingdom</h3>
+          <p>Floor-to-ceiling apothecary shelves where preserved curiosities and whispering faces shift inside amber glass.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Voodoo_Apothecary_Shelves.jpg" alt="The Voodoo Apothecary & Counterfeit Kingdom" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Geryon_Mardi_Gras_Carnival_King.jpg', 'Geryon&#39;s Mardi Gras Masquerade of Liars', 'TIER II • MASQUERADE BALL (3840×2160) • 12.6 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • MASQUERADE BALL (3840×2160)</span>
+            <span class="size-pill">12.6 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Geryon's Mardi Gras Masquerade of Liars</h3>
+          <p>Ornate 19th-century hand-tinted engraving of a gilded Carnival monarch surrounded by cracked porcelain masks.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Geryon_Mardi_Gras_Carnival_King.jpg" alt="Geryon's Mardi Gras Masquerade of Liars" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR03_KEYFRAME03_Geryon_Unmasked_Scorpion_Monster.jpg', 'Geryon Unmasked — Winged Scorpion Beast of Fraud', 'TIER III • MALEBOLGE REVEAL (3840×2160) • 11.3 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER III • MALEBOLGE REVEAL (3840×2160)</span>
+            <span class="size-pill">11.3 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Geryon Unmasked — Winged Scorpion Beast of Fraud</h3>
+          <p>The gilded Mardi Gras facade peels away to reveal Dante's winged serpent-scorpion guardian hovering above Malebolge.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR03_KEYFRAME03_Geryon_Unmasked_Scorpion_Monster.jpg" alt="Geryon Unmasked — Winged Scorpion Beast of Fraud" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="FRAUD" onclick="openLightbox('03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Devils_Crooked_Gambling_Hall.jpg', 'The Devil&#39;s Crooked Riverboat Gambling Hall', 'TIER II • RIGGED CASINO (3840×2160) • 9.1 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">TIER II • RIGGED CASINO (3840×2160)</span>
+            <span class="size-pill">9.1 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Devil's Crooked Riverboat Gambling Hall</h3>
+          <p>Candlelit New Orleans gambling saloon with a reptilian Eye of Fortune wheel and self-dealing tarot cards.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="03_Circle_VIII_Fraud_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Devils_Crooked_Gambling_Hall.jpg" alt="The Devil's Crooked Riverboat Gambling Hall" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+  <section class="circle-section frame-section" data-circle="VEVE_SEALS">
+    <div class="circle-banner" style="border-left-color: #f2c65c;">
+      <div>
+        <h2>CROSS-CIRCLE RITUAL PORTALS: NEW ORLEANS SACRED GEOMETRY, VÈVÈ CROSSROADS & ESOTERIC SEALS — NATIVE 4K UHD (3840×2160) HERO STYLE FRAMES</h2>
+        <div class="banner-narrative">Click any 4K UHD keyframe to inspect at full resolution. Toggle the 9:4 UNO Arena LED Wall Safe-Zone guide above to verify center-safe framing.</div>
+      </div>
+      <span class="banner-meta">6 Native 3840×2160 16:9 PNG Masters • Center-Safe for 3888×1728 V3 Raster</span>
+    </div>
+    <div class="grid frame-grid">
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Legba_Kongo_Cosmogram_Crossroads.jpg', 'Papa Legba&#39;s Crossroads & Kongo Cosmogram Sanctuary', 'CROSSROADS PORTAL (3840×2160) • 9.0 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">CROSSROADS PORTAL (3840×2160)</span>
+            <span class="size-pill">9.0 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Papa Legba's Crossroads & Kongo Cosmogram Sanctuary</h3>
+          <p>Glowing chalk and cornmeal Vèvè cosmogram inscribed on rain-slicked New Orleans cemetery flagstones.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR01_KEYFRAME01_Legba_Kongo_Cosmogram_Crossroads.jpg" alt="Papa Legba's Crossroads & Kongo Cosmogram Sanctuary" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Gluttony_Ouroboros_Heart_Seal.jpg', 'The Esoteric Seal of Gluttony (Ouroboros & Erzulie Heart-Mirror)', 'CIRCLE III SEAL (3840×2160) • 11.2 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">CIRCLE III SEAL (3840×2160)</span>
+            <span class="size-pill">11.2 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Esoteric Seal of Gluttony (Ouroboros & Erzulie Heart-Mirror)</h3>
+          <p>Gilded brass Ouroboros serpent biting its tail around an ornate French Quarter banquet mirror.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR02_KEYFRAME01_Gluttony_Ouroboros_Heart_Seal.jpg" alt="The Esoteric Seal of Gluttony (Ouroboros & Erzulie Heart-Mirror)" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Heresy_Damballah_Stained_Glass_Seal.jpg', 'The Esoteric Seal of Heresy (Damballah Stained-Glass Rosette)', 'CIRCLE VI SEAL (3840×2160) • 9.7 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">CIRCLE VI SEAL (3840×2160)</span>
+            <span class="size-pill">9.7 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Esoteric Seal of Heresy (Damballah Stained-Glass Rosette)</h3>
+          <p>Twin Damballah-Wedo serpents intertwined inside a fractured Gothic stained-glass cathedral rose window.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR03_KEYFRAME01_Heresy_Damballah_Stained_Glass_Seal.jpg" alt="The Esoteric Seal of Heresy (Damballah Stained-Glass Rosette)" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Fraud_Masonic_Eye_Of_Providence_Seal.jpg', 'The Esoteric Seal of Fraud (1865 Masonic Eye & Crossroads)', 'CIRCLE VIII SEAL (3840×2160) • 10.2 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">CIRCLE VIII SEAL (3840×2160)</span>
+            <span class="size-pill">10.2 MB • 4K UHD JPG</span>
+          </div>
+          <h3>The Esoteric Seal of Fraud (1865 Masonic Eye & Crossroads)</h3>
+          <p>All-seeing reptilian Eye of Providence carved into a deceptive New Orleans limestone tomb facade.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR04_KEYFRAME01_Fraud_Masonic_Eye_Of_Providence_Seal.jpg" alt="The Esoteric Seal of Fraud (1865 Masonic Eye & Crossroads)" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR05_KEYFRAME01_Samedi_Attic_Grimoire_Altar.jpg', 'Baron Samedi&#39;s Attic Grimoire & Nine Circles Map', 'INFERNO MAP SEAL (3840×2160) • 7.7 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">INFERNO MAP SEAL (3840×2160)</span>
+            <span class="size-pill">7.7 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Baron Samedi's Attic Grimoire & Nine Circles Map</h3>
+          <p>Candlelit French Quarter attic altar with an open 1800s esoteric grimoire of Dante's Nine Circles.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR05_KEYFRAME01_Samedi_Attic_Grimoire_Altar.jpg" alt="Baron Samedi's Attic Grimoire & Nine Circles Map" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card frame-card" data-circle="VEVE_SEALS" onclick="openLightbox('04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR05_KEYFRAME03_Samedi_Attic_Grimoire_Nine_Circles_Vortex.jpg', 'Nine Wrought-Iron Circles of Hell Astrolabe Vortex', 'PEAK VORTEX (3840×2160) • 8.0 MB')">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-uhd">PEAK VORTEX (3840×2160)</span>
+            <span class="size-pill">8.0 MB • 4K UHD JPG</span>
+          </div>
+          <h3>Nine Wrought-Iron Circles of Hell Astrolabe Vortex</h3>
+          <p>Counter-rotating brass and wrought-iron rings rising out of the grimoire into a glowing abyss.</p>
+        </div>
+        <div class="media-wrap">
+          <img loading="lazy" src="04_Cross_Circle_Veve_Seals_Previews/UHD_3840x2160_DIR05_KEYFRAME03_Samedi_Attic_Grimoire_Nine_Circles_Vortex.jpg" alt="Nine Wrought-Iron Circles of Hell Astrolabe Vortex" />
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>    </div>
+  </section>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <div class="lb-bar" onclick="event.stopPropagation()">
+      <div>
+        <strong id="lbTitle" style="font-size:16px;"></strong>
+        <span id="lbMeta" style="font-size:12px; color:#b5a995; margin-left:12px;"></span>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <button class="util-btn" onclick="toggleCropGuide()">Toggle 9:4 Wall Safe-Zone</button>
+        <button class="filter-btn" onclick="closeLightbox()">Close (Esc)</button>
+      </div>
+    </div>
+    <div class="lb-media" onclick="event.stopPropagation()">
+      <img id="lbImg" src="" alt="" />
+      <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+      <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+    </div>
+  </div>
+
+  <script>
+    function pauseAllVideos() {
+      document.querySelectorAll('video').forEach(v => v.pause());
+    }
+
+    function toggleCropGuide() {
+      document.body.classList.toggle('show-crop-guide');
+      const btn = document.getElementById('cropBtn');
+      btn.classList.toggle('active', document.body.classList.contains('show-crop-guide'));
+    }
+
+    function setView(mode, btn) {
+      document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      pauseAllVideos();
+
+      const reelSections = document.querySelectorAll('.reel-section');
+      const frameSections = document.querySelectorAll('.frame-section');
+
+      if (mode === 'TOP_PICKS') {
+        reelSections.forEach(sec => {
+          const isExtra = sec.getAttribute('data-extra') === 'true';
+          sec.style.display = isExtra ? 'none' : '';
+          if (!isExtra) {
+            sec.querySelectorAll('.reel-card').forEach(card => {
+              card.style.display = (card.getAttribute('data-top') === 'true') ? '' : 'none';
+            });
+          }
+        });
+        frameSections.forEach(sec => sec.style.display = 'none');
+      } else if (mode === 'ALL_MAIN') {
+        reelSections.forEach(sec => {
+          const isExtra = sec.getAttribute('data-extra') === 'true';
+          sec.style.display = isExtra ? 'none' : '';
+          if (!isExtra) {
+            sec.querySelectorAll('.reel-card').forEach(card => card.style.display = '');
+          }
+        });
+        frameSections.forEach(sec => sec.style.display = '');
+      } else if (mode === 'FRAMES_ONLY') {
+        reelSections.forEach(sec => sec.style.display = 'none');
+        frameSections.forEach(sec => sec.style.display = '');
+      } else {
+        reelSections.forEach(sec => {
+          const match = sec.getAttribute('data-circle') === mode;
+          sec.style.display = match ? '' : 'none';
+          if (match) {
+            sec.querySelectorAll('.reel-card').forEach(card => card.style.display = '');
+          }
+        });
+        frameSections.forEach(sec => {
+          sec.style.display = (sec.getAttribute('data-circle') === mode) ? '' : 'none';
+        });
+      }
+    }
+
+    function openLightbox(src, title, meta) {
+      document.getElementById('lbImg').src = src;
+      document.getElementById('lbTitle').innerText = title;
+      document.getElementById('lbMeta').innerText = meta;
+      document.getElementById('lightbox').classList.add('open');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.getElementById('lbImg').src = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    setView('TOP_PICKS', document.querySelector('.filter-btn.active'));
+  </script>
+</body>
+</html>
