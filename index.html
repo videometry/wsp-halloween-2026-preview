@@ -554,6 +554,55 @@
       height: auto;
     }
 
+    /* === UNIFORM CARD GRID & CONSISTENT VIDEO SIZING ACROSS ALL SECTIONS === */
+    .grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 20px !important;
+      align-items: stretch !important;
+    }
+    @media (min-width: 1700px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      }
+    }
+    @media (max-width: 1020px) {
+      .grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+      }
+    }
+    .card.reel-card {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      height: 100% !important;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    .card.reel-card .card-header {
+      flex: 1 1 auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      min-height: 116px !important;
+    }
+    .card.reel-card .media-wrap {
+      position: relative !important;
+      width: 100% !important;
+      aspect-ratio: 16 / 9 !important;
+      height: auto !important;
+      flex: 0 0 auto !important;
+      background: #000 !important;
+      overflow: hidden !important;
+    }
+    .card.reel-card .media-wrap video {
+      width: 100% !important;
+      height: 100% !important;
+      aspect-ratio: 16 / 9 !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+
     /* === WIDESPREAD TEAM INTERACTIVE REVIEW, TIMESTAMP & 4K UPSCALE SYSTEM === */
     body {
       padding-bottom: 130px !important;
@@ -1079,9 +1128,9 @@
                 <div class="dir-item-desc">Continuous 92.8-second native 4K UHD Blender 4.3 3D procedural vortex & Flow abstract psychedelic master showcase across Gluttony, Heresy & Fraud.</div>
               </td>
               <td class="col-file"><a href="13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4" target="_blank" class="mono-link">13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4</a></td>
-              <td class="col-size">20.3 MB</td>
+              <td class="col-size">452.7 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4', '[4K UHD Blender 3D + Flow Showcase] All 3 Circles — Drippy Chalice Ouroboros, Medusa Ophanim & Tarot Escher Vortex Master Reel', '★ NEW 4K UHD BLENDER 3D + FLOW 3-CIRCLE SHOWCASE • 92.8s (24 FPS) • 20.3 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4', '[4K UHD Blender 3D + Flow Showcase] All 3 Circles — Drippy Chalice Ouroboros, Medusa Ophanim & Tarot Escher Vortex Master Reel', '★ NEW 4K UHD BLENDER 3D + FLOW 3-CIRCLE SHOWCASE • 92.8s (24 FPS) • 452.7 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4" download="04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -1093,9 +1142,9 @@
                 <div class="dir-item-desc">Native 4K UHD Blender 4.3 3D procedural drippy vortex tunnel & metallic orbital rings composited with QC-selected live Flow Drippy Chalice totem and 8-spoke kaleidoscopic mandala.</div>
               </td>
               <td class="col-file"><a href="13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4" target="_blank" class="mono-link">13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4</a></td>
-              <td class="col-size">7.1 MB</td>
+              <td class="col-size">158.5 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4', '[4K UHD Blender 3D + Flow] Circle III: Gluttony — Drippy Chalice & Ouroboros 3D Vortex', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE III GLUTTONY • 30.9s (24 FPS) • 7.1 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4', '[4K UHD Blender 3D + Flow] Circle III: Gluttony — Drippy Chalice & Ouroboros 3D Vortex', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE III GLUTTONY • 30.9s (24 FPS) • 158.5 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4" download="01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -1107,9 +1156,9 @@
                 <div class="dir-item-desc">Native 4K UHD Blender 4.3 3D counter-rotating Ophanim interlocking wheels & drippy vortex tunnel composited with QC-selected live Flow Drippy Medusa Oracle totem.</div>
               </td>
               <td class="col-file"><a href="13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4" target="_blank" class="mono-link">13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4</a></td>
-              <td class="col-size">7.1 MB</td>
+              <td class="col-size">158.3 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4', '[4K UHD Blender 3D + Flow] Circle VI: Heresy — Drippy Medusa & Ophanim 3D Kaleidoscope', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VI HERESY • 31.0s (24 FPS) • 7.1 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4', '[4K UHD Blender 3D + Flow] Circle VI: Heresy — Drippy Medusa & Ophanim 3D Kaleidoscope', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VI HERESY • 31.0s (24 FPS) • 158.3 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4" download="02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -1121,9 +1170,9 @@
                 <div class="dir-item-desc">Native 4K UHD Blender 4.3 3D Escher staircase vortex & carnival geometry rings composited with QC-selected live Flow Drippy Two-Headed Tarot & Geryon totem.</div>
               </td>
               <td class="col-file"><a href="13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4" target="_blank" class="mono-link">13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4</a></td>
-              <td class="col-size">7.1 MB</td>
+              <td class="col-size">157.9 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4', '[4K UHD Blender 3D + Flow] Circle VIII: Fraud — Drippy Two-Headed Tarot & Escher 3D Vortex', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VIII FRAUD • 31.0s (24 FPS) • 7.1 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4', '[4K UHD Blender 3D + Flow] Circle VIII: Fraud — Drippy Two-Headed Tarot & Escher 3D Vortex', '★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VIII FRAUD • 31.0s (24 FPS) • 157.9 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4" download="03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -2616,7 +2665,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW 4K UHD BLENDER 3D + FLOW 3-CIRCLE SHOWCASE • 92.8s (24 FPS)</span>
             <div class="pill-group">
-              <span class="size-pill">20.3 MB • 4K UHD @ 24 fps</span>
+              <span class="size-pill">452.7 MB • 4K UHD @ 24 fps</span>
               <a class="dl-pill" href="13_Blender3D_Flow_Psychedelic_UHD/04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4" download="04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4" title="Download 04_ALL_3_CIRCLES_UHD_4K_BLENDER3D_ABSTRACT_PSYCHEDELIC_SHOWCASE.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2634,7 +2683,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE III GLUTTONY • 30.9s (24 FPS)</span>
             <div class="pill-group">
-              <span class="size-pill">7.1 MB • 4K UHD @ 24 fps</span>
+              <span class="size-pill">158.5 MB • 4K UHD @ 24 fps</span>
               <a class="dl-pill" href="13_Blender3D_Flow_Psychedelic_UHD/01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4" download="01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4" title="Download 01_UHD_4K_BLENDER3D_GLUTTONY_DRIPPY_CHALICE_OUROBOROS_VORTEX.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2652,7 +2701,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VI HERESY • 31.0s (24 FPS)</span>
             <div class="pill-group">
-              <span class="size-pill">7.1 MB • 4K UHD @ 24 fps</span>
+              <span class="size-pill">158.3 MB • 4K UHD @ 24 fps</span>
               <a class="dl-pill" href="13_Blender3D_Flow_Psychedelic_UHD/02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4" download="02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4" title="Download 02_UHD_4K_BLENDER3D_HERESY_DRIPPY_MEDUSA_OPHANIM_KALEIDOSCOPE.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2670,7 +2719,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW 4K UHD BLENDER 3D + FLOW • CIRCLE VIII FRAUD • 31.0s (24 FPS)</span>
             <div class="pill-group">
-              <span class="size-pill">7.1 MB • 4K UHD @ 24 fps</span>
+              <span class="size-pill">157.9 MB • 4K UHD @ 24 fps</span>
               <a class="dl-pill" href="13_Blender3D_Flow_Psychedelic_UHD/03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4" download="03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4" title="Download 03_UHD_4K_BLENDER3D_FRAUD_DRIPPY_TWO_HEADED_TAROT_ESCHER_VORTEX.mp4">⬇ MP4</a>
             </div>
           </div>
