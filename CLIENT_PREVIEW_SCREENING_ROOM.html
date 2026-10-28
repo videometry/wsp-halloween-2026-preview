@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Widespread Panic Halloween 2026 — Complete Client Preview Gallery (61 Main Video Loops + 12 Extras)</title>
+  <title>Widespread Panic Halloween 2026 — Complete Client Preview Gallery (67 Main Video Loops + 12 Extras)</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -553,6 +553,366 @@
       width: auto;
       height: auto;
     }
+
+    /* === WIDESPREAD TEAM INTERACTIVE REVIEW, TIMESTAMP & 4K UPSCALE SYSTEM === */
+    body {
+      padding-bottom: 130px !important;
+    }
+    .best-top-callout {
+      background: linear-gradient(135deg, rgba(48, 32, 14, 0.92), rgba(22, 16, 34, 0.95));
+      border: 1px solid #d99536;
+      border-left: 6px solid #ffbe55;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0 22px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+    }
+    .best-top-callout h2 {
+      margin: 0 0 5px 0;
+      font-size: 17px;
+      color: #ffd885;
+      letter-spacing: 0.3px;
+    }
+    .best-top-callout p {
+      margin: 0;
+      font-size: 13px;
+      color: #e2d6c3;
+      line-height: 1.45;
+      max-width: 980px;
+    }
+    .card.status-like {
+      border: 2px solid #2ecc71 !important;
+      box-shadow: 0 0 26px rgba(46, 204, 113, 0.25) !important;
+    }
+    .card.status-dislike {
+      border: 1px solid #7f2a2a !important;
+      opacity: 0.58;
+    }
+    .card.status-dislike:hover {
+      opacity: 0.92;
+    }
+    .card.upscale-queued {
+      box-shadow: 0 0 28px rgba(0, 245, 212, 0.28) !important;
+    }
+    .wsp-review-panel {
+      background: #0d0a14;
+      border-top: 1px solid #2b233a;
+      padding: 11px 14px 13px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .wsp-action-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+    .wsp-btn {
+      cursor: pointer;
+      background: #191424;
+      color: #d9cebc;
+      border: 1px solid #382e4a;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 11.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.14s ease;
+    }
+    .wsp-btn:hover {
+      background: #261f36;
+      color: #fff;
+      border-color: #5b4b78;
+    }
+    .wsp-btn.btn-like.active {
+      background: #143d26;
+      color: #7ef7a8;
+      border-color: #2ecc71;
+    }
+    .wsp-btn.btn-dislike.active {
+      background: #3d161b;
+      color: #ff9aa2;
+      border-color: #e74c3c;
+    }
+    .wsp-btn.btn-upscale.active {
+      background: #0f3838;
+      color: #64ffda;
+      border-color: #00f5d4;
+    }
+    .wsp-btn.btn-ts {
+      background: #291e12;
+      color: #ffcf7d;
+      border-color: #704f24;
+      margin-left: auto;
+    }
+    .wsp-btn.btn-ts:hover {
+      background: #3d2b17;
+      color: #ffe5b4;
+      border-color: #ffaa33;
+    }
+    .wsp-ts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .wsp-ts-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #15111f;
+      border: 1px solid #322844;
+      border-left: 3px solid #ffaa33;
+      border-radius: 5px;
+      padding: 4px 7px;
+    }
+    .wsp-ts-jump {
+      cursor: pointer;
+      background: #2c1f11;
+      color: #ffcc66;
+      border: 1px solid #6b4c23;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 6px;
+      white-space: nowrap;
+    }
+    .wsp-ts-jump:hover {
+      background: #422e17;
+      color: #fff;
+    }
+    .wsp-ts-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: #f5ecdc;
+      font-size: 12px;
+      padding: 3px 4px;
+    }
+    .wsp-ts-input:focus {
+      outline: none;
+      background: #0a080f;
+      border-radius: 3px;
+    }
+    .wsp-ts-del {
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      color: #9e8f80;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 0 4px;
+    }
+    .wsp-ts-del:hover {
+      color: #ff6b6b;
+    }
+    .wsp-note-input {
+      width: 100%;
+      background: #14101d;
+      color: #eee2ce;
+      border: 1px solid #2b233b;
+      border-radius: 5px;
+      padding: 6px 9px;
+      font-size: 11.5px;
+    }
+    .wsp-note-input:focus {
+      outline: none;
+      border-color: #ffaa33;
+      background: #0b0910;
+    }
+    /* Dedicated 4K Upscale & Final Render Queue Section */
+    #upscaleQueueSection {
+      display: none;
+      margin-bottom: 44px;
+      background: #110e19;
+      border: 1px solid #265952;
+      border-left: 6px solid #00f5d4;
+      border-radius: 10px;
+      padding: 20px 24px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.65);
+    }
+    .upscale-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #25383c;
+      margin-bottom: 16px;
+    }
+    .upscale-header h2 {
+      margin: 0 0 4px 0;
+      font-size: 20px;
+      color: #64ffda;
+    }
+    .upscale-header p {
+      margin: 0;
+      font-size: 13px;
+      color: #b9ccc8;
+    }
+    .upscale-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    .upscale-table th {
+      text-align: left;
+      padding: 10px 12px;
+      background: #0b0910;
+      color: #7bf0d2;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #243b38;
+    }
+    .upscale-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #1c242b;
+      vertical-align: middle;
+    }
+    .upscale-select {
+      background: #171321;
+      color: #f2e9d8;
+      border: 1px solid #3a304c;
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+    /* Sticky Bottom Widespread Team Review Bar */
+    #wspStickyReviewDock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(13, 10, 20, 0.97);
+      border-top: 2px solid #d99536;
+      padding: 10px 24px;
+      z-index: 9500;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    .dock-left, .dock-center, .dock-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .reviewer-input {
+      background: #191424;
+      color: #ffd479;
+      border: 1px solid #4d3c28;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      min-width: 190px;
+    }
+    .dock-pill {
+      cursor: pointer;
+      background: #181322;
+      color: #ded2be;
+      border: 1px solid #352b47;
+      border-radius: 6px;
+      padding: 6px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.14s ease;
+    }
+    .dock-pill:hover {
+      border-color: #ffaa33;
+      color: #fff;
+    }
+    .dock-pill.pill-like { border-color: #27ae60; color: #82f7a9; }
+    .dock-pill.pill-upscale { border-color: #00f5d4; color: #64ffda; }
+    .dock-pill.pill-ts { border-color: #ffaa33; color: #ffd275; }
+    .dock-pill.pill-dislike { border-color: #c0392b; color: #ff9ea2; }
+    .dock-submit-btn {
+      cursor: pointer;
+      background: linear-gradient(135deg, #d9821b, #ffaa33);
+      color: #09070c;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 15px;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      box-shadow: 0 3px 14px rgba(255, 170, 51, 0.35);
+    }
+    .dock-submit-btn:hover {
+      background: linear-gradient(135deg, #ee9626, #ffc155);
+    }
+    /* Review Summary Modal */
+    #wspReviewModal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 4, 9, 0.92);
+      z-index: 10000;
+      padding: 28px;
+      align-items: center;
+      justify-content: center;
+    }
+    #wspReviewModal.open {
+      display: flex;
+    }
+    .wsp-modal-box {
+      background: #130f1c;
+      border: 1px solid #d99536;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 960px;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 16px 50px rgba(0,0,0,0.85);
+    }
+    .wsp-modal-head {
+      padding: 16px 20px;
+      background: #1a1426;
+      border-bottom: 1px solid #322844;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wsp-modal-body {
+      padding: 18px 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .wsp-summary-textarea {
+      width: 100%;
+      min-height: 310px;
+      background: #09070d;
+      color: #f2e9d8;
+      border: 1px solid #3a304c;
+      border-radius: 6px;
+      padding: 12px;
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 12px;
+      line-height: 1.45;
+      resize: vertical;
+    }
+
   </style>
 </head>
 <body>
@@ -561,41 +921,46 @@
     <h1>WIDESPREAD PANIC HALLOWEEN 2026 — MASTER CLIENT PREVIEW GALLERY (ORGANIZED BY CIRCLE)</h1>
     <div class="subtitle">
       Curated for <strong>Paul Hoffman</strong>, <strong>Valentine Cranford</strong>, and <strong>Andrew Smith (Pulse Lighting)</strong>.<br/>
-      <strong>Click Any Circle Below to View Everything Available for That Circle:</strong> All <strong>1930s Max Fleischer 'Swing You Sinners' Jazz Loops (3 Loops)</strong>, <strong>1970s Rock Poster Silkscreen &amp; Carved Linocut Remakes (3 Loops)</strong>, <strong>8-Stage Flat-Printmaking Scenic Panoramas (3 Loops)</strong>, and <strong>After Effects 2026 Stagecraft &amp; Living Automaton Suites (15 Loops)</strong> are now integrated directly into their respective <strong>Circle III: Gluttony (24 Total Loops)</strong>, <strong>Circle VI: Heresy (16 Total Loops)</strong>, and <strong>Circle VIII: Fraud (15 Total Loops)</strong> sections!
+      <strong>Click Any Circle Below to View Everything Available for That Circle:</strong> All <strong>1930s Max Fleischer 'Swing You Sinners' Jazz Loops (3 Loops)</strong>, <strong>1970s Rock Poster Silkscreen &amp; Carved Linocut Remakes (3 Loops)</strong>, <strong>8-Stage Flat-Printmaking Scenic Panoramas (3 Loops)</strong>, and <strong>After Effects 2026 Stagecraft &amp; Living Automaton Suites (15 Loops)</strong> are now integrated directly into their respective <strong>Circle III: Gluttony (26 Total Loops)</strong>, <strong>Circle VI: Heresy (18 Total Loops)</strong>, and <strong>Circle VIII: Fraud (17 Total Loops)</strong> sections!
     </div>
     <div class="stats-strip">
       <div class="stat-box">
-        <div class="val">Circle III: Gluttony (24 Loops)</div>
+        <div class="val">Circle III: Gluttony (26 Loops)</div>
         <div class="lbl">1 Fleischer + 2 Linocut + 1 Woodblock Scenic + 5 AE Rigs + 12 Original + 3 Portals</div>
       </div>
       <div class="stat-box">
-        <div class="val">Circle VI: Heresy (16 Loops)</div>
+        <div class="val">Circle VI: Heresy (18 Loops)</div>
         <div class="lbl">1 Fleischer + 1 Linocut + 1 Stained-Glass Scenic + 5 AE Rigs + 5 Original + 3 Portals</div>
       </div>
       <div class="stat-box">
-        <div class="val">Circle VIII: Fraud (15 Loops)</div>
+        <div class="val">Circle VIII: Fraud (17 Loops)</div>
         <div class="lbl">1 Fleischer + 1 Paper-Theater Scenic + 5 AE Rigs + 5 Original + 3 Portals</div>
       </div>
       <div class="stat-box">
-        <div class="val">61 Main + 12 Extras</div>
+        <div class="val">67 Main + 12 Extras</div>
         <div class="lbl">100% Distinct Individual Variations • Framed for UNO Arena V3 (3888×1728)</div>
       </div>
     </div>
     <div class="toolbar">
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter-id="TOP_PICKS" onclick="setView('TOP_PICKS', this)">★ Top 27 Director's Cut (Quick Tour)</button>
-        <button class="filter-btn" data-filter-id="ALL_MAIN" onclick="setView('ALL_MAIN', this)">All 61 Main Loops</button>
-        <button class="filter-btn" data-filter-id="GLUTTONY" onclick="setView('GLUTTONY', this)" style="border-color:#d93829; color:#ffb3ab;">🔥 Circle III: Gluttony (24 Loops)</button>
-        <button class="filter-btn" data-filter-id="HERESY" onclick="setView('HERESY', this)" style="border-color:#9e1b2a; color:#ff9ea8;">🔥 Circle VI: Heresy (16 Loops)</button>
-        <button class="filter-btn" data-filter-id="FRAUD" onclick="setView('FRAUD', this)" style="border-color:#e0a82e; color:#ffe49e;">🔥 Circle VIII: Fraud (15 Loops)</button>
+        <button class="filter-btn active" data-filter-id="TOP_PICKS" onclick="setView('TOP_PICKS', this)">🏆 Best Available Work — Top 33 Director's Cut (Quick Tour)</button>
+        <button class="filter-btn" data-filter-id="ALL_MAIN" onclick="setView('ALL_MAIN', this)">All 67 Main Loops</button>
+        <button class="filter-btn" id="topBtnLiked" data-filter-id="LIKED_ONLY" onclick="setView('LIKED_ONLY', this)" style="border-color:#2ecc71; color:#82f7a9;">👍 Liked Most (<span class="cnt-like">0</span>)</button>
+        <button class="filter-btn" id="topBtnUpscale" data-filter-id="UPSCALE_QUEUE" onclick="setView('UPSCALE_QUEUE', this)" style="border-color:#00f5d4; color:#64ffda;">🚀 4K Upscale Queue (<span class="cnt-upscale">0</span>)</button>
+        <button class="filter-btn" id="topBtnChanges" data-filter-id="CHANGES_ONLY" onclick="setView('CHANGES_ONLY', this)" style="border-color:#ffaa33; color:#ffd275;">⏱ Timestamped Changes (<span class="cnt-ts">0</span>)</button>
+        <button class="filter-btn" id="topBtnDisliked" data-filter-id="DISLIKED_ONLY" onclick="setView('DISLIKED_ONLY', this)" style="border-color:#c0392b; color:#ff9ea2;">👎 Disliked (<span class="cnt-dislike">0</span>)</button>
+        <button class="filter-btn" data-filter-id="GLUTTONY" onclick="setView('GLUTTONY', this)" style="border-color:#d93829; color:#ffb3ab;">🔥 Circle III: Gluttony (26 Loops)</button>
+        <button class="filter-btn" data-filter-id="HERESY" onclick="setView('HERESY', this)" style="border-color:#9e1b2a; color:#ff9ea8;">🔥 Circle VI: Heresy (18 Loops)</button>
+        <button class="filter-btn" data-filter-id="FRAUD" onclick="setView('FRAUD', this)" style="border-color:#e0a82e; color:#ffe49e;">🔥 Circle VIII: Fraud (17 Loops)</button>
         <button class="filter-btn" data-filter-id="FLEISCHER_1930S" onclick="setView('FLEISCHER_1930S', this)" style="border-color:#ff9e44; color:#ffd19a;">★ 1930s Max Fleischer Jazz (3 Loops)</button>
         <button class="filter-btn" data-filter-id="CLIENT_NOTES_V2" onclick="setView('CLIENT_NOTES_V2', this)" style="border-color:#5ce1e6; color:#9ff6fa;">★ 1970s Silkscreen &amp; Linocut (3 Loops)</button>
         <button class="filter-btn" data-filter-id="SCENIC_PRINTMAKING" onclick="setView('SCENIC_PRINTMAKING', this)" style="border-color:#e8c56b; color:#ffe7a0;">★ Flat-Printmaking Scenic (3 Loops)</button>
+        <button class="filter-btn" data-filter-id="UHD_STAGE_COMPOSITES" onclick="setView('UHD_STAGE_COMPOSITES', this)" style="border-color:#00f5d4; color:#80ffea;">★ 4K UHD Stage Composites (6 Loops)</button>
         <button class="filter-btn" data-filter-id="AFTER_EFFECTS_LAB" onclick="setView('AFTER_EFFECTS_LAB', this)" style="border-color:#b388ff; color:#e0ccff;">★ After Effects Stagecraft &amp; Automatons (15 Loops)</button>
         <button class="filter-btn" data-filter-id="VEVE_SEALS" onclick="setView('VEVE_SEALS', this)">Sacred Geometry Vèvè Portals (5 Loops)</button>
         <button class="filter-btn" data-filter-id="INFERNAL_TAROT" onclick="setView('INFERNAL_TAROT', this)">Infernal Tarot Deck (5 Loops)</button>
         <button class="filter-btn" data-filter-id="FRENCH_CARDS" onclick="setView('FRENCH_CARDS', this)">1880 French Playing Cards (5 Loops)</button>
-        <button class="filter-btn" data-filter-id="DIRECTORY" onclick="setView('DIRECTORY', this)">📂 File Directory &amp; Index (73 Loops)</button>
+        <button class="filter-btn" data-filter-id="DIRECTORY" onclick="setView('DIRECTORY', this)">📂 File Directory &amp; Index (79 Loops)</button>
         <button class="filter-btn extra-btn" data-filter-id="EXTRAS" onclick="setView('EXTRAS', this)">+ Bonus Extras &amp; Carvings (12 Loops)</button>
       </div>
       <div class="filter-bar">
@@ -608,16 +973,67 @@
     </div>
   </header>
 
+  <div class="best-top-callout">
+    <div>
+      <h2>🏆 BEST AVAILABLE WORK HIGHLIGHTED ON TOP — INTERACTIVE WIDESPREAD TEAM REVIEW &amp; 4K UPSCALE SELECTION</h2>
+      <p>
+        <strong>1. Best Available Work First:</strong> All newly remastered <strong>V3 Pure-24fps Loops</strong> (1930s Max Fleischer Jazz-Age, 1970s Rock Poster Silkscreen/Linocut, and 8-Stage Flat-Printmaking Scenic Panoramas) and <strong>Native 4K UHD Stage Composites &amp; Living Automatons</strong> are featured right at the top.<br/>
+        <strong>2. Flag &amp; Timestamp Effortlessly:</strong> On any loop below, click <strong>👍 Like Most</strong>, <strong>👎 Dislike</strong>, <strong>🚀 Queue for 4K Upscale</strong>, or hit <strong>⏱ + Mark Change @ Timestamp</strong> while watching to log frame-accurate revision notes. All selections auto-save and can be sent in one click via the bottom review bar!
+      </p>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      <button class="util-btn" style="border-color:#00f5d4; color:#64ffda;" onclick="setView('UPSCALE_QUEUE', document.getElementById('topBtnUpscale'))">🚀 View 4K Upscale Queue (<span class="cnt-upscale">0</span>)</button>
+      <button class="dock-submit-btn" onclick="openReviewModal()">📤 Record &amp; Send Team Selections</button>
+    </div>
+  </div>
+
+  <section id="upscaleQueueSection">
+    <div class="upscale-header">
+      <div>
+        <h2>🚀 4K UHD UPSCALE &amp; FINAL ARENA RENDER QUEUE (UNO ARENA V3 3888×1728 &amp; 4K UHD 3840×2160)</h2>
+        <p>Loops flagged with <strong>🚀 Queue for 4K Upscale</strong> appear here so we can deliver your exact final 4K UHD / UNO Arena 9:4 LED Wall renders and apply any timestamped adjustments.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <button class="util-btn" style="border-color:#2ecc71; color:#82f7a9;" onclick="queueAllLikedForUpscale()">+ Add All "👍 Liked Most" Loops to Upscale Queue</button>
+        <button class="dock-submit-btn" onclick="openReviewModal()">📤 Send Final Upscale &amp; Change List</button>
+      </div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px; align-items:center;">
+      <select id="quickAddUpscaleSelect" class="upscale-select" style="flex:1; min-width:280px;">
+        <option value="">+ Quick-add any loop from the gallery to the 4K Upscale Queue...</option>
+      </select>
+      <button class="util-btn" style="border-color:#00f5d4; color:#64ffda;" onclick="quickAddSelectedToUpscale()">+ Add Loop to Queue</button>
+    </div>
+    <div class="dir-table-wrap">
+      <table class="upscale-table">
+        <thead>
+          <tr>
+            <th style="width:45px;">#</th>
+            <th>Loop Title &amp; Circle</th>
+            <th style="width:210px;">Target Arena / 4K Spec</th>
+            <th style="width:165px;">Render Priority</th>
+            <th>Timestamped Changes &amp; Notes</th>
+            <th style="width:160px; text-align:right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="upscaleQueueTbody">
+          <tr><td colspan="6" style="text-align:center; color:#9a8f7e; padding:22px;">No loops queued for 4K upscale yet. Click <strong>🚀 Queue for 4K Upscale</strong> on any video card or click <strong>+ Add All "👍 Liked Most" Loops</strong> above!</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
   <section id="directorySection">
     <div class="dir-hero-bar">
       <div class="dir-hero-top">
         <div>
-          <h2>📂 MASTER FILE DIRECTORY &amp; DIRECT DOWNLOAD INDEX (61 MAIN LOOPS + 12 EXTRAS)</h2>
+          <h2>📂 MASTER FILE DIRECTORY &amp; DIRECT DOWNLOAD INDEX (67 MAIN LOOPS + 12 EXTRAS)</h2>
           <p>Browse the complete folder hierarchy below, preview any video loop in the pop-up player, download individual MP4s, or grab the entire organized repository.</p>
         </div>
         <div style="display:flex; flex-wrap:wrap; gap:10px;">
           <a class="util-btn zip-btn" href="https://github.com/videometry/wsp-halloween-2026-preview/archive/refs/heads/main.zip" download>⬇ Download Full Package (.ZIP Archive)</a>
-          <button class="util-btn dl-suite-btn" onclick="downloadTopPicks(this)">⬇ Download Top 27 Director's Cut MP4s</button>
+          <button class="util-btn dl-suite-btn" onclick="downloadTopPicks(this)">⬇ Download Top 33 Director's Cut MP4s</button>
         </div>
       </div>
       <div class="dir-controls">
@@ -625,7 +1041,7 @@
         <button class="util-btn" onclick="document.getElementById('dirSearchInput').value=''; filterDirectory('');">Clear Filter</button>
       </div>
       <div class="dir-jump-bar">
-        <a class="dir-jump-pill" href="#dir-GLUTTONY" style="border-left: 3px solid #ff9933;">📂 01_Circle_III_Gluttony_Previews/ (21 MP4s)</a><a class="dir-jump-pill" href="#dir-HERESY" style="border-left: 3px solid #ff5e42;">📂 02_Circle_VI_Heresy_Previews/ (13 MP4s)</a><a class="dir-jump-pill" href="#dir-FRAUD" style="border-left: 3px solid #8df56b;">📂 03_Circle_VIII_Fraud_Previews/ (12 MP4s)</a><a class="dir-jump-pill" href="#dir-VEVE_SEALS" style="border-left: 3px solid #f2c65c;">📂 04_Cross_Circle_Veve_Seals_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-INFERNAL_TAROT" style="border-left: 3px solid #ffd166;">📂 05_Cross_Circle_Infernal_Tarot_Deck_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-FRENCH_CARDS" style="border-left: 3px solid #f4a261;">📂 06_Cross_Circle_French_Court_Cards_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-EXTRAS" style="border-left: 3px solid #786c8c;">📂 07_Bonus_Archival_and_Public_Domain_Extras/ (12 MP4s)</a>
+        <a class="dir-jump-pill" href="#dir-GLUTTONY" style="border-left: 3px solid #ff9933;">📂 01_Circle_III_Gluttony_Previews/ (23 MP4s)</a><a class="dir-jump-pill" href="#dir-HERESY" style="border-left: 3px solid #ff5e42;">📂 02_Circle_VI_Heresy_Previews/ (15 MP4s)</a><a class="dir-jump-pill" href="#dir-FRAUD" style="border-left: 3px solid #8df56b;">📂 03_Circle_VIII_Fraud_Previews/ (14 MP4s)</a><a class="dir-jump-pill" href="#dir-VEVE_SEALS" style="border-left: 3px solid #f2c65c;">📂 04_Cross_Circle_Veve_Seals_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-INFERNAL_TAROT" style="border-left: 3px solid #ffd166;">📂 05_Cross_Circle_Infernal_Tarot_Deck_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-FRENCH_CARDS" style="border-left: 3px solid #f4a261;">📂 06_Cross_Circle_French_Court_Cards_Previews/ (5 MP4s)</a><a class="dir-jump-pill" href="#dir-EXTRAS" style="border-left: 3px solid #786c8c;">📂 07_Bonus_Archival_and_Public_Domain_Extras/ (12 MP4s)</a>
       </div>
     </div>
     
@@ -633,10 +1049,10 @@
         <div class="dir-folder-header" style="border-left: 5px solid #ff9933;">
           <div>
             <div class="dir-folder-path">📁 01_Circle_III_Gluttony_Previews/</div>
-            <div class="dir-folder-sub">CIRCLE III: GLUTTONY — "1930s FLEISCHER JAZZ CAFÉ, 1970s SILKSCREEN/LINOCUT, WOODBLOCK SCENIC, AE SHADOWBOX AUTOMATONS & BOURBON BANQUET SAGAS" — 21 Video Loops</div>
+            <div class="dir-folder-sub">CIRCLE III: GLUTTONY — "1930s FLEISCHER JAZZ CAFÉ, 1970s SILKSCREEN/LINOCUT, WOODBLOCK SCENIC, AE SHADOWBOX AUTOMATONS & BOURBON BANQUET SAGAS" — 23 Video Loops</div>
           </div>
           <div class="dir-folder-btns">
-            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('GLUTTONY', this)">⬇ Download All 21 MP4s</button>
+            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('GLUTTONY', this)">⬇ Download All 23 MP4s</button>
             
           </div>
         </div>
@@ -676,9 +1092,9 @@
                 <div class="dir-item-desc">Ground-up 1970s rock-poster silkscreen & carved linocut remake: every banquet item is locked on the table from Stage 1 and transforms in place into the devouring linocut maw & fractal rot rosette.</div>
               </td>
               <td class="col-file"><a href="00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" target="_blank" class="mono-link">00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4</a></td>
-              <td class="col-size">30.8 MB</td>
+              <td class="col-size">38.7 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] Terminal Gluttony — 6-Stage Bourbon Banquet & Devouring Maw Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.7% SEAM) • 41.0s • ZERO OUT-OF-THIN-AIR ITEMS • 30.8 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] Terminal Gluttony — 6-Stage Bourbon Banquet & Devouring Maw Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.7% SEAM) • 41.0s • ZERO OUT-OF-THIN-AIR ITEMS • 38.7 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -690,9 +1106,9 @@
                 <div class="dir-item-desc">Ground-up 1970s voodoo concert-poster silkscreen & linocut remake: engraved Ouroboros arch, twin copper alembic stills, overflowing cauldron-chalice, and 4 Sun/Moon/Plague-Bird/Skull masked banqueters.</div>
               </td>
               <td class="col-file"><a href="00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" target="_blank" class="mono-link">00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4</a></td>
-              <td class="col-size">33.8 MB</td>
+              <td class="col-size">50.6 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] The Rite of Indulgence — 6-Stage Alchemical Masquerade & Alembic Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.6% SEAM) • 45.2s • AUTHENTIC ANIMATED PRINT LOOK • 33.8 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] The Rite of Indulgence — 6-Stage Alchemical Masquerade & Alembic Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.6% SEAM) • 45.2s • AUTHENTIC ANIMATED PRINT LOOK • 50.6 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -704,14 +1120,42 @@
                 <div class="dir-item-desc">Rain-Swept Courtyard Banquet → Spilling Goblets → Swirling Tablecloth Vortex → Breaching Woodblock Bayou Cerberus → Peak Feast Whirlpool → Submerging Reset</div>
               </td>
               <td class="col-file"><a href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4" target="_blank" class="mono-link">08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4</a></td>
-              <td class="col-size">61.0 MB</td>
+              <td class="col-size">75.8 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle III: Gluttony — Ivan Bilibin Woodblock Courtyard Banquet & Bayou Cerberus (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE III GLUTTONY • 61.0s (8/8 PASS • 95.5% SEAM) • 61.0 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle III: Gluttony — Ivan Bilibin Woodblock Courtyard Banquet & Bayou Cerberus (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE III GLUTTONY • 61.0s (8/8 PASS • 95.5% SEAM) • 75.8 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
-            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4">
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" data-filename="01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4">
               <td class="col-idx">#05</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Dark Psychedelic Stage] Circle III: Gluttony — Melting Bayou Cerberus & Liquid-Light Feast Stage</div>
+                <div class="dir-item-desc">Native 4K UHD dark psychedelic stage composite with QC-selected solo portrait Bayou Cerberus, rotating 1970s liquid-light oil wheels, and multi-plane French Quarter stagecraft.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4</a></td>
+              <td class="col-size">119.0 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4', '[4K UHD Dark Psychedelic Stage] Circle III: Gluttony — Melting Bayou Cerberus & Liquid-Light Feast Stage', '★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE III GLUTTONY • 30.8s (24 FPS) • 119.0 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" download="01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" data-filename="01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4">
+              <td class="col-idx">#06</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Multi-Plane Stage] Circle III: Gluttony — 3-Zone Chroma-Keyed Bayou Cerberus & Courtyard Stage</div>
+                <div class="dir-item-desc">Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane French Quarter courtyard stage.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4</a></td>
+              <td class="col-size">111.4 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4', '[4K UHD Multi-Plane Stage] Circle III: Gluttony — 3-Zone Chroma-Keyed Bayou Cerberus & Courtyard Stage', '★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE III GLUTTONY • 30.8s (24 FPS) • 111.4 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" download="01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4">
+              <td class="col-idx">#07</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 5 V2] COMP 01 — Circle III: Gluttony Bourbon Banquet & Bayou Cerberus Living Automaton Shadowbox</div>
@@ -725,7 +1169,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4" data-filename="COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4">
-              <td class="col-idx">#06</td>
+              <td class="col-idx">#08</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 1080p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 1] COMP 01 — Gluttony Bourbon Banquet 2.5D Shadowbox</div>
@@ -739,7 +1183,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4" data-filename="COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4">
-              <td class="col-idx">#07</td>
+              <td class="col-idx">#09</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 1080p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 2] COMP 01 — Vèvè Crossroads & Ouroboros Procedural Seal</div>
@@ -753,7 +1197,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4">
-              <td class="col-idx">#08</td>
+              <td class="col-idx">#10</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 1080p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 3] COMP 01 — Gluttony Hybrid Lithograph Portal</div>
@@ -767,7 +1211,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4" data-filename="COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4">
-              <td class="col-idx">#09</td>
+              <td class="col-idx">#11</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 1080p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 4] COMP 01 — Gluttony Baroque Mandala & Proscenium Tunnel</div>
@@ -781,7 +1225,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4" data-filename="03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4">
-              <td class="col-idx">#10</td>
+              <td class="col-idx">#12</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Hardware Crawfish Saga — 12-Step Cyber-Baroque Feast Loop</div>
@@ -795,7 +1239,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4" data-filename="05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4">
-              <td class="col-idx">#11</td>
+              <td class="col-idx">#13</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Rite of Indulgence — 12-Step Alchemical Banquet Loop</div>
@@ -809,7 +1253,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4" data-filename="04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4">
-              <td class="col-idx">#12</td>
+              <td class="col-idx">#14</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Hall of the Beignet Eyes — 12-Step Surreal Ocular Loop</div>
@@ -823,7 +1267,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4" data-filename="07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4">
-              <td class="col-idx">#13</td>
+              <td class="col-idx">#15</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The King Cake Parade — 11-Step Flooded Quarter Float Loop</div>
@@ -837,7 +1281,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4" data-filename="02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4">
-              <td class="col-idx">#14</td>
+              <td class="col-idx">#16</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Terminal Gluttony — 10-Step Feeding Frenzy & Fractal Rot Loop</div>
@@ -851,7 +1295,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="01_Circle_III_Gluttony_Previews/01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4" data-filename="01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4">
-              <td class="col-idx">#15</td>
+              <td class="col-idx">#17</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Never-Ending Bourbon Street Banquet</div>
@@ -865,7 +1309,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4" data-filename="06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4">
-              <td class="col-idx">#16</td>
+              <td class="col-idx">#18</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Primal Glisten — 11-Step Macro Appetite & Predator Gaze Loop</div>
@@ -879,7 +1323,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4" data-filename="01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4">
-              <td class="col-idx">#17</td>
+              <td class="col-idx">#19</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Original 12-Step Parasitic Banquet Master Loop</div>
@@ -893,7 +1337,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4" data-filename="02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4">
-              <td class="col-idx">#18</td>
+              <td class="col-idx">#20</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Bacchus & The Creole Goddess of Appetite</div>
@@ -907,7 +1351,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4" data-filename="03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4">
-              <td class="col-idx">#19</td>
+              <td class="col-idx">#21</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Food Becomes Architecture Cathedral</div>
@@ -921,7 +1365,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4" data-filename="04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4">
-              <td class="col-idx">#20</td>
+              <td class="col-idx">#22</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Infernal Brass Band & Fat Tuesday Parade</div>
@@ -935,7 +1379,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="01_Circle_III_Gluttony_Previews/05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4" data-filename="05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4">
-              <td class="col-idx">#21</td>
+              <td class="col-idx">#23</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Cerberus of the Bayou Courtyard Banquet</div>
@@ -956,10 +1400,10 @@
         <div class="dir-folder-header" style="border-left: 5px solid #ff5e42;">
           <div>
             <div class="dir-folder-path">📁 02_Circle_VI_Heresy_Previews/</div>
-            <div class="dir-folder-sub">CIRCLE VI: HERESY — "1930s FLEISCHER GRAVEYARD CABARET, 1970s LINOCUT SERPENT SAINT, STAINED-GLASS SCENIC, AE AUTOMATONS & FORBIDDEN CATHEDRAL" — 13 Video Loops</div>
+            <div class="dir-folder-sub">CIRCLE VI: HERESY — "1930s FLEISCHER GRAVEYARD CABARET, 1970s LINOCUT SERPENT SAINT, STAINED-GLASS SCENIC, AE AUTOMATONS & FORBIDDEN CATHEDRAL" — 15 Video Loops</div>
           </div>
           <div class="dir-folder-btns">
-            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('HERESY', this)">⬇ Download All 13 MP4s</button>
+            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('HERESY', this)">⬇ Download All 15 MP4s</button>
             
           </div>
         </div>
@@ -985,9 +1429,9 @@
                 <div class="dir-item-desc">Bowler-hatted rubber-hose skeletons jamming on piano-key Canto X sepulchres, swaying pillar cobras, and the Voodoo Snake Queen unfurling her Medusa viper crown under a grinning pie-eyed crescent moon.</div>
               </td>
               <td class="col-file"><a href="11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4" target="_blank" class="mono-link">11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4</a></td>
-              <td class="col-size">39.0 MB</td>
+              <td class="col-size">42.0 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4', '[1930s Max Fleischer Heresy] St. Louis Cemetery Second-Line & The Voodoo Snake Queen — 6-Stage Loop', '★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VI HERESY • 6/6 PASS (96.4% SEAM) • 45.8s • 39.0 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4', '[1930s Max Fleischer Heresy] St. Louis Cemetery Second-Line & The Voodoo Snake Queen — 6-Stage Loop', '★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VI HERESY • 6/6 PASS (96.4% SEAM) • 45.8s • 42.0 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4" download="02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -999,9 +1443,9 @@
                 <div class="dir-item-desc">Ground-up 1970s rock-poster silkscreen & carved linocut remake: Gothic iron sanctuary arch, uncoiling emerald pillar serpents, and sunburst halo transforming into a symmetrical Medusa-mandala of interlocking vipers.</div>
               </td>
               <td class="col-file"><a href="00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" target="_blank" class="mono-link">00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4</a></td>
-              <td class="col-size">33.6 MB</td>
+              <td class="col-size">56.0 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] The Serpent Saint (Sacred → Corrupted → Reforming) — 6-Stage Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.5% SEAM) • 45.4s • AUTHENTIC ANIMATED PRINT LOOK • 33.6 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4', '[1970s Silkscreen & Linocut Remake] The Serpent Saint (Sacred → Corrupted → Reforming) — 6-Stage Loop', '★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.5% SEAM) • 45.4s • AUTHENTIC ANIMATED PRINT LOOK • 56.0 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -1013,14 +1457,42 @@
                 <div class="dir-item-desc">Silent Necropolis Sanctuary → Igniting Braziers → Rising Tomb Fires → Gold Wireframe → Peak Canto X Serpent Oracle & Ouroboros Rose Window → Tesserae Dissolution Reset</div>
               </td>
               <td class="col-file"><a href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4" target="_blank" class="mono-link">08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4</a></td>
-              <td class="col-size">33.6 MB</td>
+              <td class="col-size">46.8 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle VI: Heresy — Medieval Woodcut & Gothic Stained-Glass St. Louis Necropolis (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE VI HERESY • 59.7s (8/8 PASS • 96.4% SEAM) • 33.6 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle VI: Heresy — Medieval Woodcut & Gothic Stained-Glass St. Louis Necropolis (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE VI HERESY • 59.7s (8/8 PASS • 96.4% SEAM) • 46.8 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
-            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4">
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" data-filename="02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4">
               <td class="col-idx">#04</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Dark Psychedelic Stage] Circle VI: Heresy — Ophanim Serpent Oracle & Liquid-Light Sanctuary Stage</div>
+                <div class="dir-item-desc">Native 4K UHD dark psychedelic stage composite with QC-selected Ophanim Serpent Oracle, counter-rotating stained-glass sky rings, and liquid-light projection wheels.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4</a></td>
+              <td class="col-size">139.4 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4', '[4K UHD Dark Psychedelic Stage] Circle VI: Heresy — Ophanim Serpent Oracle & Liquid-Light Sanctuary Stage', '★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE VI HERESY • 30.8s (24 FPS) • 139.4 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" download="02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" data-filename="02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4">
+              <td class="col-idx">#05</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Multi-Plane Stage] Circle VI: Heresy — 3-Zone Chroma-Keyed Serpent Oracle & Necropolis Stage</div>
+                <div class="dir-item-desc">Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane St. Louis Cemetery sanctuary stage.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4</a></td>
+              <td class="col-size">135.3 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4', '[4K UHD Multi-Plane Stage] Circle VI: Heresy — 3-Zone Chroma-Keyed Serpent Oracle & Necropolis Stage', '★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE VI HERESY • 30.8s (24 FPS) • 135.3 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" download="02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4">
+              <td class="col-idx">#06</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 5 V2] COMP 02 — Circle VI: Heresy St. Louis Necropolis & 6-Winged Serpent Oracle Automaton Shadowbox</div>
@@ -1034,7 +1506,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4" data-filename="COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4">
-              <td class="col-idx">#05</td>
+              <td class="col-idx">#07</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 1] COMP 02 — Heresy St. Louis Cemetery 2.5D Shadowbox</div>
@@ -1048,7 +1520,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4" data-filename="COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4">
-              <td class="col-idx">#06</td>
+              <td class="col-idx">#08</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 2] COMP 02 — Damballah Stained-Glass & Ophanim Wheel Rig</div>
@@ -1062,7 +1534,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4">
-              <td class="col-idx">#07</td>
+              <td class="col-idx">#09</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 3] COMP 02 — Heresy Hybrid Lithograph Portal</div>
@@ -1076,7 +1548,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4" data-filename="COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4">
-              <td class="col-idx">#08</td>
+              <td class="col-idx">#10</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 4] COMP 02 — Heresy Iron Rose Window & Skulls Mandala Tunnel</div>
@@ -1090,7 +1562,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="02_Circle_VI_Heresy_Previews/01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4" data-filename="01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4">
-              <td class="col-idx">#09</td>
+              <td class="col-idx">#11</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Serpent Saint (Sacred → Corrupted → Reforming • V1 Original)</div>
@@ -1104,7 +1576,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="02_Circle_VI_Heresy_Previews/02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4" data-filename="02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4">
-              <td class="col-idx">#10</td>
+              <td class="col-idx">#12</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Cathedral of Forbidden Knowledge</div>
@@ -1118,7 +1590,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="02_Circle_VI_Heresy_Previews/03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4" data-filename="03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4">
-              <td class="col-idx">#11</td>
+              <td class="col-idx">#13</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Revelation of the Serpent (Doré Flaming Tomb Vortex)</div>
@@ -1132,7 +1604,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="02_Circle_VI_Heresy_Previews/04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4" data-filename="04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4">
-              <td class="col-idx">#12</td>
+              <td class="col-idx">#14</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Weeping Icon — Abandoned Louisiana Chapel</div>
@@ -1146,7 +1618,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="02_Circle_VI_Heresy_Previews/05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4" data-filename="05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4">
-              <td class="col-idx">#13</td>
+              <td class="col-idx">#15</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Heretic's Coronation & French Quarter Procession</div>
@@ -1167,10 +1639,10 @@
         <div class="dir-folder-header" style="border-left: 5px solid #8df56b;">
           <div>
             <div class="dir-folder-path">📁 03_Circle_VIII_Fraud_Previews/</div>
-            <div class="dir-folder-sub">CIRCLE VIII: FRAUD — "1930s FLEISCHER CARNIVAL CROUPIER, 1880s PAPER-THEATER SCENIC, AE CLOCKWORK AUTOMATONS & SNAKE OIL MASQUERADE" — 12 Video Loops</div>
+            <div class="dir-folder-sub">CIRCLE VIII: FRAUD — "1930s FLEISCHER CARNIVAL CROUPIER, 1880s PAPER-THEATER SCENIC, AE CLOCKWORK AUTOMATONS & SNAKE OIL MASQUERADE" — 14 Video Loops</div>
           </div>
           <div class="dir-folder-btns">
-            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('FRAUD', this)">⬇ Download All 12 MP4s</button>
+            <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('FRAUD', this)">⬇ Download All 14 MP4s</button>
             
           </div>
         </div>
@@ -1196,9 +1668,9 @@
                 <div class="dir-item-desc">Dapper rubber-hose carnival croupier Dr. Geryon whose polite face hinges open like a cabinet door to reveal a horned demon while bowler-hatted vipers uncork from snake-oil bottles and roll dice.</div>
               </td>
               <td class="col-file"><a href="11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4" target="_blank" class="mono-link">11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4</a></td>
-              <td class="col-size">34.1 MB</td>
+              <td class="col-size">36.9 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4', '[1930s Max Fleischer Fraud] Dr. Geryon&#39;s Medicine Show & The Loaded Roulette Wheel — 6-Stage Loop', '★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VIII FRAUD • 6/6 PASS (96.4% SEAM) • 45.7s • 34.1 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4', '[1930s Max Fleischer Fraud] Dr. Geryon&#39;s Medicine Show & The Loaded Roulette Wheel — 6-Stage Loop', '★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VIII FRAUD • 6/6 PASS (96.4% SEAM) • 45.7s • 36.9 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4" download="03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
@@ -1210,14 +1682,42 @@
                 <div class="dir-item-desc">Polite Gaslit Masquerade Bridge → Shifting Paper Masks → Hinged Snake-Oil Apothecary Facades → Rising Paper-Cutout Geryon & Canal of Vipers → Folding Reset</div>
               </td>
               <td class="col-file"><a href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4" target="_blank" class="mono-link">08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4</a></td>
-              <td class="col-size">30.4 MB</td>
+              <td class="col-size">43.4 MB</td>
               <td class="col-actions">
-                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle VIII: Fraud — 1880s 5-Color French Stencil & Paper Toy-Theater Malebolge (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE VIII FRAUD • 57.6s (8/8 PASS • 95.5% SEAM) • 30.4 MB')">▶ Preview</button>
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4', 'Circle VIII: Fraud — 1880s 5-Color French Stencil & Paper Toy-Theater Malebolge (8-Stage Loop)', '★ NEW SCENIC SUITE • CIRCLE VIII FRAUD • 57.6s (8/8 PASS • 95.5% SEAM) • 43.4 MB')">▶ Preview</button>
                 <a class="dir-btn dl-btn" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4">⬇ Download</a>
               </td>
             </tr>
-            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4">
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" data-filename="03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4">
               <td class="col-idx">#03</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Dark Psychedelic Stage] Circle VIII: Fraud — Melting Winged Geryon & Liquid-Light Malebolge Stage</div>
+                <div class="dir-item-desc">Native 4K UHD dark psychedelic stage composite with QC-selected Winged Geryon, sinusoidal acid-melt waves, and multi-plane carnival proscenium.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4</a></td>
+              <td class="col-size">145.9 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4', '[4K UHD Dark Psychedelic Stage] Circle VIII: Fraud — Melting Winged Geryon & Liquid-Light Malebolge Stage', '★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE VIII FRAUD • 30.8s (24 FPS) • 145.9 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" download="03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" data-filename="03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4">
+              <td class="col-idx">#04</td>
+              <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
+              <td class="col-title">
+                <div class="dir-item-title">[4K UHD Multi-Plane Stage] Circle VIII: Fraud — 3-Zone Chroma-Keyed Winged Geryon & Paper-Theater Stage</div>
+                <div class="dir-item-desc">Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane Malebolge theater stage.</div>
+              </td>
+              <td class="col-file"><a href="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" target="_blank" class="mono-link">12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4</a></td>
+              <td class="col-size">123.8 MB</td>
+              <td class="col-actions">
+                <button class="dir-btn preview-btn" onclick="openVideoLightbox('12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4', '[4K UHD Multi-Plane Stage] Circle VIII: Fraud — 3-Zone Chroma-Keyed Winged Geryon & Paper-Theater Stage', '★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE VIII FRAUD • 30.8s (24 FPS) • 123.8 MB')">▶ Preview</button>
+                <a class="dir-btn dl-btn" href="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" download="03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4">⬇ Download</a>
+              </td>
+            </tr>
+            <tr class="dir-row" data-type="mp4" data-top="true" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4">
+              <td class="col-idx">#05</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 4K UHD @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 5 V2] COMP 03 — Circle VIII: Fraud Malebolge Paper Theater & Winged Geryon Automaton Shadowbox</div>
@@ -1231,7 +1731,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4" data-filename="COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4">
-              <td class="col-idx">#04</td>
+              <td class="col-idx">#06</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 1] COMP 03 — Fraud Charlatan Theatre 2.5D Shadowbox</div>
@@ -1245,7 +1745,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4" data-filename="COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4">
-              <td class="col-idx">#05</td>
+              <td class="col-idx">#07</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 2] COMP 03 — Masonic Eye & Infernal Tarot Astrolabe Rig</div>
@@ -1259,7 +1759,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4">
-              <td class="col-idx">#06</td>
+              <td class="col-idx">#08</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 3] COMP 03 — Fraud Hybrid Lithograph Portal</div>
@@ -1273,7 +1773,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4" data-filename="COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4">
-              <td class="col-idx">#07</td>
+              <td class="col-idx">#09</td>
               <td class="col-type"><span class="badge">1080p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">[AE Suite 4] COMP 03 — Fraud Serpent Wheel & Charlatan Mandala Tunnel</div>
@@ -1287,7 +1787,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="true" data-dl="03_Circle_VIII_Fraud_Previews/01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4" data-filename="01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4">
-              <td class="col-idx">#08</td>
+              <td class="col-idx">#10</td>
               <td class="col-type"><span class="badge badge-gold">★ TOP PICK • 720p @ 24 fps</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Snake Oil Medicine Show</div>
@@ -1301,7 +1801,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="03_Circle_VIII_Fraud_Previews/02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4" data-filename="02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4">
-              <td class="col-idx">#09</td>
+              <td class="col-idx">#11</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Voodoo Apothecary & Counterfeit Kingdom</div>
@@ -1315,7 +1815,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="03_Circle_VIII_Fraud_Previews/03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4" data-filename="03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4">
-              <td class="col-idx">#10</td>
+              <td class="col-idx">#12</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">Geryon's Mardi Gras & The Masquerade of Liars</div>
@@ -1329,7 +1829,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="03_Circle_VIII_Fraud_Previews/04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4" data-filename="04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4">
-              <td class="col-idx">#11</td>
+              <td class="col-idx">#13</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The Devil's Crooked Gambling Hall</div>
@@ -1343,7 +1843,7 @@
               </td>
             </tr>
             <tr class="dir-row" data-type="mp4" data-top="false" data-dl="03_Circle_VIII_Fraud_Previews/05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4" data-filename="05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4">
-              <td class="col-idx">#12</td>
+              <td class="col-idx">#14</td>
               <td class="col-type"><span class="badge">720p @ 24 fps LOOP</span></td>
               <td class="col-title">
                 <div class="dir-item-title">The False Prophetess & Hall of False Reflections</div>
@@ -1864,8 +2364,8 @@
         <div class="banner-narrative">Complete Circle III: Gluttony collection uniting the 1930s Max Fleischer Café Cerberus loop, the 1970s Silkscreen & Linocut Remakes (Terminal Gluttony & Rite of Indulgence), the 8-Stage Ivan Bilibin Woodblock Courtyard Scenic loop, all 5 After Effects 2026 Gluttony Stagecraft & Living Automaton loops, and the 12 original Gluttony Master Sagas & Bourbon Banquet loops.</div>
       </div>
       <div class="banner-actions">
-        <span class="banner-meta">21 Distinct Seamless Video Variations</span>
-        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('GLUTTONY', this)">⬇ Download Suite (21 MP4s)</button>
+        <span class="banner-meta">23 Distinct Seamless Video Variations</span>
+        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('GLUTTONY', this)">⬇ Download Suite (23 MP4s)</button>
       </div>
     </div>
     <div class="grid">
@@ -1892,7 +2392,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.7% SEAM) • 41.0s • ZERO OUT-OF-THIN-AIR ITEMS</span>
             <div class="pill-group">
-              <span class="size-pill">30.8 MB • 720p @ 24 fps</span>
+              <span class="size-pill">38.7 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="00_Oct27_Client_Feedback_Remediated_Cuts/01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" title="Download 01_TERMINAL_GLUTTONY_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -1910,7 +2410,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.6% SEAM) • 45.2s • AUTHENTIC ANIMATED PRINT LOOK</span>
             <div class="pill-group">
-              <span class="size-pill">33.8 MB • 720p @ 24 fps</span>
+              <span class="size-pill">50.6 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="00_Oct27_Client_Feedback_Remediated_Cuts/02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" title="Download 02_RITE_OF_INDULGENCE_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -1928,7 +2428,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SCENIC SUITE • CIRCLE III GLUTTONY • 61.0s (8/8 PASS • 95.5% SEAM)</span>
             <div class="pill-group">
-              <span class="size-pill">61.0 MB • 720p @ 24 fps</span>
+              <span class="size-pill">75.8 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4" title="Download 01_SCENIC_GLUTTONY_WOODBLOCK_8_STAGE_MASTER_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -1941,7 +2441,43 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-05" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-05" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" data-filename="01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE III GLUTTONY • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">119.0 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" download="01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4" title="Download 01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Dark Psychedelic Stage] Circle III: Gluttony — Melting Bayou Cerberus & Liquid-Light Feast Stage</h3>
+          <p>Native 4K UHD dark psychedelic stage composite with QC-selected solo portrait Bayou Cerberus, rotating 1970s liquid-light oil wheels, and multi-plane French Quarter stagecraft.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/01_UHD_4K_PSYCHEDELIC_GLUTTONY_MELTING_CERBERUS_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-GLUTTONY-06" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" data-filename="01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE III GLUTTONY • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">111.4 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" download="01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4" title="Download 01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Multi-Plane Stage] Circle III: Gluttony — 3-Zone Chroma-Keyed Bayou Cerberus & Courtyard Stage</h3>
+          <p>Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane French Quarter courtyard stage.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/01_UHD_4K_COMPOSITE_GLUTTONY_CERBERUS_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-GLUTTONY-07" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_01_GLUTTONY_BESPOKE_SHADOWBOX_V2.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW AE SUITE 5 V2 • CIRCLE III GLUTTONY • 12.0s • LIVING AUTOMATON SHADOWBOX</span>
@@ -1959,7 +2495,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-06" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4" data-filename="COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-08" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4" data-filename="COMP_01_GLUTTONY_BOURBON_BANQUET_SHADOWBOX.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">AE SUITE 1 • GLUTTONY SHADOWBOX • 12.0s (1080p)</span>
@@ -1977,7 +2513,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-07" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4" data-filename="COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-09" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4" data-filename="COMP_01_VEVE_CROSSROADS_AND_OUROBOROS_SEAL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">AE SUITE 2 • VÈVÈ & OUROBOROS RIG • 12.0s (1080p)</span>
@@ -1995,7 +2531,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-08" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-10" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_01_GLUTTONY_HYBRID_LITHOGRAPH_PORTAL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">AE SUITE 3 • GLUTTONY HYBRID PORTAL • 12.0s (1080p)</span>
@@ -2013,7 +2549,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-09" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4" data-filename="COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-11" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4" data-filename="COMP_01_GLUTTONY_BAROQUE_MANDALA_TUNNEL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">AE SUITE 4 • GLUTTONY MANDALA TUNNEL • 12.0s (1080p)</span>
@@ -2031,7 +2567,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-10" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4" data-filename="03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-12" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4" data-filename="03_WSP26_GLU_Hardware_Crawfish_Saga_12Step_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK #1 • 12-STEP MASTER LOOP • 92.5s</span>
@@ -2049,7 +2585,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-11" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4" data-filename="05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-13" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4" data-filename="05_WSP26_GLU_Rite_of_Indulgence_12Step_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 12-STEP MASTER LOOP • 92.6s</span>
@@ -2067,7 +2603,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-12" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4" data-filename="04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-14" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4" data-filename="04_WSP26_GLU_Hall_of_the_Beignet_Eyes_12Step_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 12-STEP MASTER LOOP • 91.7s</span>
@@ -2085,7 +2621,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-13" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4" data-filename="07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-15" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4" data-filename="07_WSP26_GLU_King_Cake_Parade_11of12_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 11-STEP MASTER LOOP • 84.1s</span>
@@ -2103,7 +2639,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-14" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4" data-filename="02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-16" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4" data-filename="02_WSP26_GLU_Terminal_Gluttony_Loop_10Step_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 10-STEP MASTER LOOP • 75.8s</span>
@@ -2121,7 +2657,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-GLUTTONY-15" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4" data-filename="01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4">
+      <div class="card reel-card card-top8" id="card-GLUTTONY-17" data-top="true" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4" data-filename="01_GLUTTONY_LOOP_SEQ01_BOURBON_STREET_BANQUET.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.3% SEAM CONFIDENCE</span>
@@ -2139,7 +2675,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-16" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4" data-filename="06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-18" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4" data-filename="06_WSP26_GLU_The_Primal_Glisten_11of12_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">11-STEP MASTER LOOP • 84.2s</span>
@@ -2157,7 +2693,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-17" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4" data-filename="01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-19" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4" data-filename="01_WSP26_GLU_Original_Banquet_Loop_12Step_MASTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">12-STEP MASTER LOOP • 91.9s</span>
@@ -2175,7 +2711,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-18" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4" data-filename="02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-20" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4" data-filename="02_GLUTTONY_LOOP_SEQ02_BACCHUS_GODDESS_OF_APPETITE.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.6s • 96.4% SEAM CONFIDENCE</span>
@@ -2193,7 +2729,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-19" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4" data-filename="03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-21" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4" data-filename="03_GLUTTONY_LOOP_SEQ03_FOOD_ARCHITECTURE_CATHEDRAL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.5s • 96.2% SEAM CONFIDENCE</span>
@@ -2211,7 +2747,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-20" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4" data-filename="04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-22" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4" data-filename="04_GLUTTONY_LOOP_SEQ04_INFERNAL_BRASS_BAND_PARADE.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.6s • 96.4% SEAM CONFIDENCE</span>
@@ -2229,7 +2765,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-GLUTTONY-21" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4" data-filename="05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4">
+      <div class="card reel-card" id="card-GLUTTONY-23" data-top="false" data-circle="GLUTTONY" data-circle-tag="GLUTTONY" data-suite="GLUTTONY" data-extra="false" data-dl="01_Circle_III_Gluttony_Previews/05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4" data-filename="05_GLUTTONY_LOOP_SEQ05_BAYOU_CERBERUS_COURTYARD.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.6s • 96.3% SEAM CONFIDENCE</span>
@@ -2255,8 +2791,8 @@
         <div class="banner-narrative">Complete Circle VI: Heresy collection uniting the 1930s Max Fleischer St. Louis Cemetery Second-Line & Voodoo Snake Queen loop, the 1970s Silkscreen & Linocut Serpent Saint remake, the 8-Stage Medieval Woodcut & Stained-Glass Necropolis Scenic loop, all 5 After Effects 2026 Heresy Stagecraft & Living Automaton loops, and the 5 original Heresy Snake Woman & Cathedral loops.</div>
       </div>
       <div class="banner-actions">
-        <span class="banner-meta">13 Distinct Seamless Video Variations</span>
-        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('HERESY', this)">⬇ Download Suite (13 MP4s)</button>
+        <span class="banner-meta">15 Distinct Seamless Video Variations</span>
+        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('HERESY', this)">⬇ Download Suite (15 MP4s)</button>
       </div>
     </div>
     <div class="grid">
@@ -2265,7 +2801,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VI HERESY • 6/6 PASS (96.4% SEAM) • 45.8s</span>
             <div class="pill-group">
-              <span class="size-pill">39.0 MB • 720p @ 24 fps</span>
+              <span class="size-pill">42.0 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="11_Fleischer_1930s_Jazz_Inferno_Previews/02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4" download="02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4" title="Download 02_FLEISCHER_1930S_HERESY_GRAVEYARD_CABARET_6_STAGE_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2283,7 +2819,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SILKSCREEN/LINOCUT REMAKE • 6/6 PASS (95.5% SEAM) • 45.4s • AUTHENTIC ANIMATED PRINT LOOK</span>
             <div class="pill-group">
-              <span class="size-pill">33.6 MB • 720p @ 24 fps</span>
+              <span class="size-pill">56.0 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="00_Oct27_Client_Feedback_Remediated_Cuts/03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" download="03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4" title="Download 03_SERPENT_SAINT_LINOCUT_SILKSCREEN_6_STAGE_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2301,7 +2837,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SCENIC SUITE • CIRCLE VI HERESY • 59.7s (8/8 PASS • 96.4% SEAM)</span>
             <div class="pill-group">
-              <span class="size-pill">33.6 MB • 720p @ 24 fps</span>
+              <span class="size-pill">46.8 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4" title="Download 01_SCENIC_HERESY_STAINED_GLASS_8_STAGE_MASTER_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2314,7 +2850,43 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-HERESY-04" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4">
+      <div class="card reel-card card-top8" id="card-HERESY-04" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" data-filename="02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE VI HERESY • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">139.4 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" download="02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4" title="Download 02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Dark Psychedelic Stage] Circle VI: Heresy — Ophanim Serpent Oracle & Liquid-Light Sanctuary Stage</h3>
+          <p>Native 4K UHD dark psychedelic stage composite with QC-selected Ophanim Serpent Oracle, counter-rotating stained-glass sky rings, and liquid-light projection wheels.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/02_UHD_4K_PSYCHEDELIC_HERESY_OPHANIM_ORACLE_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-HERESY-05" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" data-filename="02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE VI HERESY • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">135.3 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" download="02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4" title="Download 02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Multi-Plane Stage] Circle VI: Heresy — 3-Zone Chroma-Keyed Serpent Oracle & Necropolis Stage</h3>
+          <p>Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane St. Louis Cemetery sanctuary stage.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/02_UHD_4K_COMPOSITE_HERESY_SERPENT_ORACLE_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-HERESY-06" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_02_HERESY_BESPOKE_SHADOWBOX_V2.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW AE SUITE 5 V2 • CIRCLE VI HERESY • 12.0s • LIVING AUTOMATON SHADOWBOX</span>
@@ -2332,7 +2904,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-05" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4" data-filename="COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4">
+      <div class="card reel-card" id="card-HERESY-07" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4" data-filename="COMP_02_HERESY_ST_LOUIS_CEMETERY_SHADOWBOX.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 1 • HERESY SHADOWBOX • 12.0s (1080p)</span>
@@ -2350,7 +2922,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-06" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4" data-filename="COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4">
+      <div class="card reel-card" id="card-HERESY-08" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4" data-filename="COMP_02_DAMBALLAH_STAINED_GLASS_AND_OPHANIM_WHEEL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 2 • METATRON & OPHANIM RIG • 12.0s (1080p)</span>
@@ -2368,7 +2940,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-07" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4">
+      <div class="card reel-card" id="card-HERESY-09" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_02_HERESY_HYBRID_LITHOGRAPH_PORTAL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 3 • HERESY HYBRID PORTAL • 12.0s (1080p)</span>
@@ -2386,7 +2958,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-08" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4" data-filename="COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4">
+      <div class="card reel-card" id="card-HERESY-10" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4" data-filename="COMP_02_HERESY_IRON_ROSE_WINDOW_TUNNEL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 4 • HERESY ROSE WINDOW TUNNEL • 12.0s (1080p)</span>
@@ -2404,7 +2976,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-HERESY-09" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4" data-filename="01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4">
+      <div class="card reel-card card-top8" id="card-HERESY-11" data-top="true" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4" data-filename="01_SNAKE_LOOP_SEQ01_THE_SERPENT_SAINT.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.6% SEAM</span>
@@ -2422,7 +2994,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-10" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4" data-filename="02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4">
+      <div class="card reel-card" id="card-HERESY-12" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4" data-filename="02_SNAKE_LOOP_SEQ02_CATHEDRAL_OF_FORBIDDEN_KNOWLEDGE.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.2s • 96.6% SEAM CONFIDENCE</span>
@@ -2440,7 +3012,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-11" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4" data-filename="03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4">
+      <div class="card reel-card" id="card-HERESY-13" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4" data-filename="03_SNAKE_LOOP_SEQ03_REVELATION_OF_THE_SERPENT.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 29.8s • 96.2% SEAM CONFIDENCE</span>
@@ -2458,7 +3030,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-12" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4" data-filename="04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4">
+      <div class="card reel-card" id="card-HERESY-14" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4" data-filename="04_SNAKE_LOOP_SEQ04_THE_WEEPING_ICON.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 28.8s • 96.5% SEAM CONFIDENCE</span>
@@ -2476,7 +3048,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-HERESY-13" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4" data-filename="05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4">
+      <div class="card reel-card" id="card-HERESY-15" data-top="false" data-circle="HERESY" data-circle-tag="HERESY" data-suite="HERESY" data-extra="false" data-dl="02_Circle_VI_Heresy_Previews/05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4" data-filename="05_SNAKE_LOOP_SEQ05_CORONATION_AND_FRENCH_QUARTER.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.5s • 96.4% SEAM CONFIDENCE</span>
@@ -2502,8 +3074,8 @@
         <div class="banner-narrative">Complete Circle VIII: Fraud (Malebolge) collection uniting the 1930s Max Fleischer Dr. Geryon's Medicine Show & Roulette Wheel loop, the 8-Stage 1880s 5-Color French Stencil Paper-Theater Scenic loop, all 5 After Effects 2026 Fraud Stagecraft & Living Automaton loops, and the 5 original Fraud Snake Oil, Apothecary & Geryon Masquerade loops.</div>
       </div>
       <div class="banner-actions">
-        <span class="banner-meta">12 Distinct Seamless Video Variations</span>
-        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('FRAUD', this)">⬇ Download Suite (12 MP4s)</button>
+        <span class="banner-meta">14 Distinct Seamless Video Variations</span>
+        <button class="util-btn dl-suite-btn" onclick="downloadSectionFiles('FRAUD', this)">⬇ Download Suite (14 MP4s)</button>
       </div>
     </div>
     <div class="grid">
@@ -2512,7 +3084,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ 1930s FLEISCHER CEL ANIMATION • CIRCLE VIII FRAUD • 6/6 PASS (96.4% SEAM) • 45.7s</span>
             <div class="pill-group">
-              <span class="size-pill">34.1 MB • 720p @ 24 fps</span>
+              <span class="size-pill">36.9 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="11_Fleischer_1930s_Jazz_Inferno_Previews/03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4" download="03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4" title="Download 03_FLEISCHER_1930S_FRAUD_CARNIVAL_GAMBLER_6_STAGE_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2530,7 +3102,7 @@
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW SCENIC SUITE • CIRCLE VIII FRAUD • 57.6s (8/8 PASS • 95.5% SEAM)</span>
             <div class="pill-group">
-              <span class="size-pill">30.4 MB • 720p @ 24 fps</span>
+              <span class="size-pill">43.4 MB • 720p @ 24 fps</span>
               <a class="dl-pill" href="08_Flat_Printmaking_Scenic_Panoramas/01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4" download="01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4" title="Download 01_SCENIC_FRAUD_PAPER_THEATER_8_STAGE_MASTER_LOOP_1X.mp4">⬇ MP4</a>
             </div>
           </div>
@@ -2543,7 +3115,43 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-FRAUD-03" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4">
+      <div class="card reel-card card-top8" id="card-FRAUD-03" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" data-filename="03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD DARK PSYCHEDELIC STAGE • CIRCLE VIII FRAUD • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">145.9 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" download="03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4" title="Download 03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Dark Psychedelic Stage] Circle VIII: Fraud — Melting Winged Geryon & Liquid-Light Malebolge Stage</h3>
+          <p>Native 4K UHD dark psychedelic stage composite with QC-selected Winged Geryon, sinusoidal acid-melt waves, and multi-plane carnival proscenium.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/03_UHD_4K_PSYCHEDELIC_FRAUD_MELTING_GERYON_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-FRAUD-04" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="UHD_STAGE_COMPOSITES" data-extra="false" data-dl="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" data-filename="03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4">
+        <div class="card-header">
+          <div class="badge-row">
+            <span class="badge badge-gold">★ 4K UHD 3-ZONE STAGE COMPOSITE • CIRCLE VIII FRAUD • 30.8s (24 FPS)</span>
+            <div class="pill-group">
+              <span class="size-pill">123.8 MB • 4K UHD @ 24 fps</span>
+              <a class="dl-pill" href="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" download="03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4" title="Download 03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4">⬇ MP4</a>
+            </div>
+          </div>
+          <h3>[4K UHD Multi-Plane Stage] Circle VIII: Fraud — 3-Zone Chroma-Keyed Winged Geryon & Paper-Theater Stage</h3>
+          <p>Voronoi 3-zone chroma-keyed Flow performers composited at true 3D Z-depths inside a locked 4K UHD multi-plane Malebolge theater stage.</p>
+        </div>
+        <div class="media-wrap">
+          <video controls loop preload="metadata" src="12_UHD_4K_Stage_Composites/03_UHD_4K_COMPOSITE_FRAUD_WINGED_GERYON_STAGE.mp4"></video>
+          <div class="crop-guide-top">UNO ARENA V3 9:4 TOP CROP MARGIN (10%)</div>
+          <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
+        </div>
+      </div>
+      <div class="card reel-card card-top8" id="card-FRAUD-05" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4" data-filename="COMP_03_FRAUD_BESPOKE_SHADOWBOX_V2.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ NEW AE SUITE 5 V2 • CIRCLE VIII FRAUD • 12.0s • LIVING AUTOMATON SHADOWBOX</span>
@@ -2561,7 +3169,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-04" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4" data-filename="COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4">
+      <div class="card reel-card" id="card-FRAUD-06" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4" data-filename="COMP_03_FRAUD_CHARLATAN_THEATRE_SHADOWBOX.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 1 • FRAUD SHADOWBOX • 12.0s (1080p)</span>
@@ -2579,7 +3187,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-05" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4" data-filename="COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4">
+      <div class="card reel-card" id="card-FRAUD-07" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4" data-filename="COMP_03_MASONIC_EYE_AND_INFERNAL_TAROT_ASTROLABE.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 2 • MASONIC TAROT ASTROLABE • 12.0s (1080p)</span>
@@ -2597,7 +3205,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-06" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4">
+      <div class="card reel-card" id="card-FRAUD-08" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4" data-filename="COMP_03_FRAUD_HYBRID_LITHOGRAPH_PORTAL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 3 • FRAUD HYBRID PORTAL • 12.0s (1080p)</span>
@@ -2615,7 +3223,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-07" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4" data-filename="COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4">
+      <div class="card reel-card" id="card-FRAUD-09" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="AFTER_EFFECTS_LAB" data-extra="false" data-dl="09_After_Effects_Stagecraft_and_Rigs/COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4" data-filename="COMP_03_FRAUD_SERPENT_WHEEL_TUNNEL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">AE SUITE 4 • FRAUD SERPENT WHEEL TUNNEL • 12.0s (1080p)</span>
@@ -2633,7 +3241,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card card-top8" id="card-FRAUD-08" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4" data-filename="01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4">
+      <div class="card reel-card card-top8" id="card-FRAUD-10" data-top="true" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4" data-filename="01_FRAUD_LOOP_SEQ01_SNAKE_OIL_MEDICINE_SHOW.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge badge-gold">★ DIRECTOR'S PICK • 30.5s HERO LOOP • 96.4% SEAM CONFIDENCE</span>
@@ -2651,7 +3259,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-09" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4" data-filename="02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4">
+      <div class="card reel-card" id="card-FRAUD-11" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4" data-filename="02_FRAUD_LOOP_SEQ02_VOODOO_APOTHECARY_BOTTLES.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.5s • 96.5% SEAM CONFIDENCE</span>
@@ -2669,7 +3277,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-10" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4" data-filename="03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4">
+      <div class="card reel-card" id="card-FRAUD-12" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4" data-filename="03_FRAUD_LOOP_SEQ03_GERYON_MARDI_GRAS_MASQUERADE.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 29.9s • 96.3% SEAM CONFIDENCE</span>
@@ -2687,7 +3295,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-11" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4" data-filename="04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4">
+      <div class="card reel-card" id="card-FRAUD-13" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4" data-filename="04_FRAUD_LOOP_SEQ04_DEVILS_CROOKED_GAMBLING_HALL.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.5s • 96.5% SEAM CONFIDENCE</span>
@@ -2705,7 +3313,7 @@
           <div class="crop-guide-bottom">UNO ARENA V3 9:4 BOTTOM CROP MARGIN (10%)</div>
         </div>
       </div>
-      <div class="card reel-card" id="card-FRAUD-12" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4" data-filename="05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4">
+      <div class="card reel-card" id="card-FRAUD-14" data-top="false" data-circle="FRAUD" data-circle-tag="FRAUD" data-suite="FRAUD" data-extra="false" data-dl="03_Circle_VIII_Fraud_Previews/05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4" data-filename="05_FRAUD_LOOP_SEQ05_FALSE_PROPHET_HALL_OF_REFLECTIONS.mp4">
         <div class="card-header">
           <div class="badge-row">
             <span class="badge">HERO LOOP • 30.7s • 96.5% SEAM CONFIDENCE</span>
@@ -3496,5 +4104,638 @@
 
     setView('TOP_PICKS', document.querySelector('.filter-btn.active'));
   </script>
+
+  <div id="wspStickyReviewDock">
+    <div class="dock-left">
+      <span style="font-size:11.5px; font-weight:700; color:#ffbe66; text-transform:uppercase;">Reviewer:</span>
+      <input type="text" id="wspReviewerName" class="reviewer-input" list="wspReviewerPresetList" placeholder="Your Name (e.g. Paul, Valentine, Andrew)..." oninput="saveReviewerName(this.value)" />
+      <datalist id="wspReviewerPresetList">
+        <option value="Paul Hoffman"></option>
+        <option value="Valentine Cranford"></option>
+        <option value="Andrew Smith (Pulse Lighting)"></option>
+        <option value="Widespread Panic Team"></option>
+      </datalist>
+      <span id="wspSyncStatus" style="font-size:11px; color:#8df59b;">✓ Auto-Saving</span>
+    </div>
+    <div class="dock-center">
+      <button class="dock-pill" onclick="setView('TOP_PICKS', document.querySelector('[data-filter-id=TOP_PICKS]'))">🏆 Best Work</button>
+      <button class="dock-pill pill-like" onclick="setView('LIKED_ONLY', document.getElementById('topBtnLiked'))">👍 Liked Most (<span class="cnt-like">0</span>)</button>
+      <button class="dock-pill pill-upscale" onclick="setView('UPSCALE_QUEUE', document.getElementById('topBtnUpscale'))">🚀 4K Upscale Queue (<span class="cnt-upscale">0</span>)</button>
+      <button class="dock-pill pill-ts" onclick="setView('CHANGES_ONLY', document.getElementById('topBtnChanges'))">⏱ Timestamp Changes (<span class="cnt-ts">0</span>)</button>
+      <button class="dock-pill pill-dislike" onclick="setView('DISLIKED_ONLY', document.getElementById('topBtnDisliked'))">👎 Disliked (<span class="cnt-dislike">0</span>)</button>
+    </div>
+    <div class="dock-right">
+      <button class="dock-submit-btn" onclick="openReviewModal()">📤 Submit / Send Selections</button>
+      <button class="dock-pill" onclick="downloadReviewJson()" title="Download your review selections as a .JSON file">⬇ Save .JSON</button>
+      <label class="dock-pill" style="cursor:pointer;" title="Load a saved Team Review .JSON file">
+        📂 Load .JSON <input type="file" accept=".json" style="display:none;" onchange="importReviewJson(event)" />
+      </label>
+    </div>
+  </div>
+
+  <div id="wspReviewModal" onclick="closeReviewModal()">
+    <div class="wsp-modal-box" onclick="event.stopPropagation()">
+      <div class="wsp-modal-head">
+        <div>
+          <strong style="font-size:17px; color:#ffd479;">📤 Widespread Panic Halloween 2026 — Team Review &amp; 4K Upscale Order</strong>
+          <div style="font-size:12px; color:#b8ac99; margin-top:2px;">Send your flagged favorites, timestamped changes, and 4K upscale selections directly to Dustin / Videometry Visuals</div>
+        </div>
+        <button class="filter-btn" onclick="closeReviewModal()">Close (Esc)</button>
+      </div>
+      <div class="wsp-modal-body">
+        <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+          <button class="dock-submit-btn" onclick="sendReviewViaEmail()">✉ Send via Email (videometryvisuals@gmail.com)</button>
+          <button class="util-btn" style="border-color:#2ecc71; color:#82f7a9;" onclick="copyReviewSummary(this)">📋 Copy Formatted Summary (for Email / Text / Slack)</button>
+          <button class="util-btn" style="border-color:#00f5d4; color:#64ffda;" onclick="downloadReviewJson()">⬇ Download Review (.JSON)</button>
+          <button class="util-btn" onclick="downloadReviewTxt()">⬇ Download Readable Report (.TXT)</button>
+        </div>
+        <textarea id="wspModalSummaryText" class="wsp-summary-textarea" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const WSP_STORAGE_KEY = 'wsp_halloween_2026_team_review_v3';
+    let wspReviewState = {
+      reviewer: '',
+      updatedAt: '',
+      items: {}
+    };
+
+    function formatTimeMMSS(sec) {
+      if (!sec || isNaN(sec) || sec < 0) sec = 0;
+      const m = Math.floor(sec / 60);
+      const s = (sec % 60).toFixed(1).padStart(4, '0');
+      return `${m}:${s}`;
+    }
+
+    function parseTimeMMSS(str) {
+      const clean = String(str || '').trim();
+      if (clean.includes(':')) {
+        const parts = clean.split(':');
+        return (parseFloat(parts[0]) || 0) * 60 + (parseFloat(parts[1]) || 0);
+      }
+      return parseFloat(clean) || 0;
+    }
+
+    function getItemKey(card) {
+      return card.getAttribute('data-filename') || card.getAttribute('data-dl') || card.id;
+    }
+
+    function ensureItemState(key, card) {
+      if (!wspReviewState.items[key]) {
+        wspReviewState.items[key] = {
+          key: key,
+          title: card ? (card.querySelector('h3')?.innerText || key) : key,
+          circle: card ? (card.getAttribute('data-circle-tag') || card.getAttribute('data-circle') || '') : '',
+          dl: card ? (card.getAttribute('data-dl') || '') : '',
+          status: '', // 'like' | 'dislike' | ''
+          upscale: false,
+          upscaleSpec: 'UNO Arena 9:4 Wall (3888x1728) + 4K UHD',
+          upscalePriority: 'Priority 1 — Must-Have',
+          note: '',
+          timestamps: [] // [{ timeSec: 12.4, timeLabel: '0:12.4', note: '...' }]
+        };
+      }
+      return wspReviewState.items[key];
+    }
+
+    function loadWspReviewState() {
+      try {
+        const raw = localStorage.getItem(WSP_STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') {
+            wspReviewState = Object.assign({ reviewer: '', updatedAt: '', items: {} }, parsed);
+          }
+        }
+      } catch (e) {}
+      const revInput = document.getElementById('wspReviewerName');
+      if (revInput && wspReviewState.reviewer) {
+        revInput.value = wspReviewState.reviewer;
+      }
+    }
+
+    function saveWspReviewState() {
+      wspReviewState.updatedAt = new Date().toISOString();
+      try {
+        localStorage.setItem(WSP_STORAGE_KEY, JSON.stringify(wspReviewState));
+      } catch (e) {}
+      updateAllReviewCountsAndTables();
+      syncReviewToLocalServerIfAvailable();
+    }
+
+    function saveReviewerName(val) {
+      wspReviewState.reviewer = val;
+      saveWspReviewState();
+    }
+
+    function syncReviewToLocalServerIfAvailable() {
+      const statusEl = document.getElementById('wspSyncStatus');
+      if (statusEl) statusEl.innerText = '✓ Saved (' + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'}) + ')';
+      if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
+        fetch('/save_client_gallery', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            gallery_type: 'wsp_client_gallery',
+            state: wspReviewState,
+            markdown: generateReviewReportText()
+          })
+        }).catch(() => {});
+      }
+    }
+
+    function injectReviewPanelsOntoCards() {
+      const quickSelect = document.getElementById('quickAddUpscaleSelect');
+      document.querySelectorAll('.reel-card').forEach(card => {
+        const key = getItemKey(card);
+        const title = card.querySelector('h3')?.innerText || key;
+        const circle = card.getAttribute('data-circle-tag') || card.getAttribute('data-circle') || '';
+        if (quickSelect) {
+          const opt = document.createElement('option');
+          opt.value = key;
+          opt.textContent = `[${circle}] ${title}`;
+          quickSelect.appendChild(opt);
+        }
+
+        const panel = document.createElement('div');
+        panel.className = 'wsp-review-panel';
+        panel.innerHTML = `
+          <div class="wsp-action-row">
+            <button type="button" class="wsp-btn btn-like" onclick="toggleCardStatus('${key}', 'like')">👍 Like Most</button>
+            <button type="button" class="wsp-btn btn-dislike" onclick="toggleCardStatus('${key}', 'dislike')">👎 Dislike</button>
+            <button type="button" class="wsp-btn btn-upscale" onclick="toggleCardUpscale('${key}')">🚀 Queue for 4K Upscale</button>
+            <button type="button" class="wsp-btn btn-ts" onclick="addCardTimestampFromVideo('${key}')">⏱ + Mark Change @ <span class="live-ts-lbl">0:00.0</span></button>
+          </div>
+          <div class="wsp-ts-list"></div>
+          <input type="text" class="wsp-note-input" placeholder="✏️ Overall note or upscale instruction for this loop..." oninput="updateCardGeneralNote('${key}', this.value)" />
+        `;
+        card.appendChild(panel);
+
+        const video = card.querySelector('video');
+        const tsLbl = panel.querySelector('.live-ts-lbl');
+        if (video && tsLbl) {
+          video.addEventListener('timeupdate', () => {
+            tsLbl.innerText = formatTimeMMSS(video.currentTime);
+          });
+          video.addEventListener('seeked', () => {
+            tsLbl.innerText = formatTimeMMSS(video.currentTime);
+          });
+        }
+        renderCardReviewUI(card, key);
+      });
+    }
+
+    function findCardByKey(key) {
+      let found = null;
+      document.querySelectorAll('.reel-card').forEach(c => {
+        if (getItemKey(c) === key) found = c;
+      });
+      return found;
+    }
+
+    function toggleCardStatus(key, targetStatus) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item.status = (item.status === targetStatus) ? '' : targetStatus;
+      if (item.status === 'dislike') {
+        item.upscale = false;
+      }
+      renderCardReviewUI(card, key);
+      saveWspReviewState();
+    }
+
+    function toggleCardUpscale(key) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item.upscale = !item.upscale;
+      if (item.upscale && item.status === 'dislike') {
+        item.status = 'like';
+      }
+      renderCardReviewUI(card, key);
+      saveWspReviewState();
+    }
+
+    function updateCardGeneralNote(key, val) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item.note = val;
+      saveWspReviewState();
+    }
+
+    function addCardTimestampFromVideo(key) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      const video = card ? card.querySelector('video') : null;
+      let sec = 0;
+      if (video) {
+        video.pause();
+        sec = video.currentTime || 0;
+      }
+      const tsObj = {
+        timeSec: Number(sec.toFixed(1)),
+        timeLabel: formatTimeMMSS(sec),
+        note: ''
+      };
+      item.timestamps.push(tsObj);
+      renderCardReviewUI(card, key);
+      saveWspReviewState();
+      if (card) {
+        const inputs = card.querySelectorAll('.wsp-ts-input');
+        if (inputs.length) inputs[inputs.length - 1].focus();
+      }
+    }
+
+    function updateTimestampNote(key, idx, val) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      if (item.timestamps[idx]) {
+        item.timestamps[idx].note = val;
+        saveWspReviewState();
+      }
+    }
+
+    function removeTimestampEntry(key, idx) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item.timestamps.splice(idx, 1);
+      renderCardReviewUI(card, key);
+      saveWspReviewState();
+    }
+
+    function seekCardVideoTo(key, sec) {
+      const card = findCardByKey(key);
+      if (!card) return;
+      const video = card.querySelector('video');
+      if (video) {
+        video.currentTime = sec;
+        video.play().catch(() => {});
+      }
+    }
+
+    function renderCardReviewUI(card, key) {
+      if (!card) return;
+      const item = wspReviewState.items[key];
+      const status = item ? item.status : '';
+      const upscale = item ? !!item.upscale : false;
+      const note = item ? (item.note || '') : '';
+      const timestamps = item ? (item.timestamps || []) : [];
+
+      card.classList.toggle('status-like', status === 'like');
+      card.classList.toggle('status-dislike', status === 'dislike');
+      card.classList.toggle('upscale-queued', upscale);
+
+      const btnLike = card.querySelector('.btn-like');
+      const btnDislike = card.querySelector('.btn-dislike');
+      const btnUpscale = card.querySelector('.btn-upscale');
+      const noteInput = card.querySelector('.wsp-note-input');
+      const tsList = card.querySelector('.wsp-ts-list');
+
+      if (btnLike) {
+        btnLike.classList.toggle('active', status === 'like');
+        btnLike.innerHTML = status === 'like' ? '👍 Liked Most ✓' : '👍 Like Most';
+      }
+      if (btnDislike) {
+        btnDislike.classList.toggle('active', status === 'dislike');
+        btnDislike.innerHTML = status === 'dislike' ? '👎 Disliked ✓' : '👎 Dislike';
+      }
+      if (btnUpscale) {
+        btnUpscale.classList.toggle('active', upscale);
+        btnUpscale.innerHTML = upscale ? '🚀 4K Upscale Queued ✓' : '🚀 Queue for 4K Upscale';
+      }
+      if (noteInput && document.activeElement !== noteInput) {
+        noteInput.value = note;
+      }
+      if (tsList) {
+        tsList.innerHTML = '';
+        timestamps.forEach((ts, idx) => {
+          const row = document.createElement('div');
+          row.className = 'wsp-ts-item';
+          row.innerHTML = `
+            <button type="button" class="wsp-ts-jump" onclick="seekCardVideoTo('${key}', ${ts.timeSec})" title="Click to jump video to ${ts.timeLabel}">▶ ${ts.timeLabel}</button>
+            <input type="text" class="wsp-ts-input" placeholder="Describe change at ${ts.timeLabel} (e.g. tweak motion, trim, color)..." value="${(ts.note || '').replace(/"/g, '&quot;')}" oninput="updateTimestampNote('${key}', ${idx}, this.value)" />
+            <button type="button" class="wsp-ts-del" onclick="removeTimestampEntry('${key}', ${idx})" title="Remove timestamp">✕</button>
+          `;
+          tsList.appendChild(row);
+        });
+      }
+    }
+
+    function queueAllLikedForUpscale() {
+      Object.keys(wspReviewState.items).forEach(k => {
+        const it = wspReviewState.items[k];
+        if (it.status === 'like') {
+          it.upscale = true;
+          renderCardReviewUI(findCardByKey(k), k);
+        }
+      });
+      saveWspReviewState();
+    }
+
+    function quickAddSelectedToUpscale() {
+      const sel = document.getElementById('quickAddUpscaleSelect');
+      if (!sel || !sel.value) return;
+      const key = sel.value;
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item.upscale = true;
+      if (!item.status) item.status = 'like';
+      renderCardReviewUI(card, key);
+      saveWspReviewState();
+      sel.value = '';
+    }
+
+    function updateUpscaleItemField(key, field, val) {
+      const card = findCardByKey(key);
+      const item = ensureItemState(key, card);
+      item[field] = val;
+      saveWspReviewState();
+    }
+
+    function updateAllReviewCountsAndTables() {
+      let likeCount = 0;
+      let dislikeCount = 0;
+      let upscaleCount = 0;
+      let tsTotalCount = 0;
+      const upscaleItems = [];
+
+      Object.values(wspReviewState.items).forEach(it => {
+        if (it.status === 'like') likeCount++;
+        if (it.status === 'dislike') dislikeCount++;
+        if (it.upscale) {
+          upscaleCount++;
+          upscaleItems.push(it);
+        }
+        const hasChanges = (it.timestamps && it.timestamps.length > 0) || (it.note && it.note.trim().length > 0);
+        if (hasChanges) tsTotalCount++;
+      });
+
+      document.querySelectorAll('.cnt-like').forEach(el => el.innerText = likeCount);
+      document.querySelectorAll('.cnt-dislike').forEach(el => el.innerText = dislikeCount);
+      document.querySelectorAll('.cnt-upscale').forEach(el => el.innerText = upscaleCount);
+      document.querySelectorAll('.cnt-ts').forEach(el => el.innerText = tsTotalCount);
+
+      const tbody = document.getElementById('upscaleQueueTbody');
+      if (tbody) {
+        if (!upscaleItems.length) {
+          tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:#9a8f7e; padding:22px;">No loops queued for 4K upscale yet. Click <strong>🚀 Queue for 4K Upscale</strong> on any video card below, or click <strong>+ Add All "👍 Liked Most" Loops</strong> above!</td></tr>`;
+        } else {
+          tbody.innerHTML = upscaleItems.map((it, i) => {
+            const tsNotes = (it.timestamps || []).map(t => `<span class="badge" style="margin-right:4px;">@${t.timeLabel}: ${t.note || '(marked)'}</span>`).join(' ');
+            const genNote = it.note ? `<div style="color:#ffd275; font-size:11.5px; margin-top:3px;">Note: ${it.note}</div>` : '';
+            const safeTitle = (it.title || it.key).replace(/'/g, "&#39;");
+            return `
+              <tr>
+                <td class="col-idx">#${String(i + 1).padStart(2, '0')}</td>
+                <td>
+                  <div class="dir-item-title">${it.title || it.key}</div>
+                  <div class="dir-item-desc"><span class="badge badge-uhd">${it.circle || 'LOOP'}</span> <span style="font-family:Consolas,monospace; font-size:11px;">${it.key}</span></div>
+                </td>
+                <td>
+                  <select class="upscale-select" onchange="updateUpscaleItemField('${it.key}', 'upscaleSpec', this.value)">
+                    <option value="UNO Arena 9:4 Wall (3888x1728) + 4K UHD" ${it.upscaleSpec === 'UNO Arena 9:4 Wall (3888x1728) + 4K UHD' ? 'selected' : ''}>UNO Arena 9:4 (3888×1728) + 4K</option>
+                    <option value="UNO Arena 9:4 Wall Only (3888x1728)" ${it.upscaleSpec === 'UNO Arena 9:4 Wall Only (3888x1728)' ? 'selected' : ''}>UNO Arena 9:4 Only (3888×1728)</option>
+                    <option value="16:9 4K UHD Only (3840x2160)" ${it.upscaleSpec === '16:9 4K UHD Only (3840x2160)' ? 'selected' : ''}>16:9 4K UHD Only (3840×2160)</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="upscale-select" onchange="updateUpscaleItemField('${it.key}', 'upscalePriority', this.value)">
+                    <option value="Priority 1 — Must-Have" ${it.upscalePriority === 'Priority 1 — Must-Have' ? 'selected' : ''}>★ Priority 1 — Must-Have</option>
+                    <option value="Priority 2 — High" ${it.upscalePriority === 'Priority 2 — High' ? 'selected' : ''}>Priority 2 — High</option>
+                    <option value="Priority 3 — Backup" ${it.upscalePriority === 'Priority 3 — Backup' ? 'selected' : ''}>Priority 3 — Backup</option>
+                  </select>
+                </td>
+                <td>${tsNotes || '<span style="color:#7c7265;">No timestamp changes marked</span>'}${genNote}</td>
+                <td style="text-align:right; white-space:nowrap;">
+                  <button class="dir-btn preview-btn" onclick="openVideoLightbox('${it.dl}', '${safeTitle}', '4K Upscale Queue')">▶ Preview</button>
+                  <button class="dir-btn" style="border-color:#c0392b; color:#ff9ea2;" onclick="toggleCardUpscale('${it.key}')">✕ Remove</button>
+                </td>
+              </tr>
+            `;
+          }).join('');
+        }
+      }
+    }
+
+    // Wrap setView to handle UPSCALE_QUEUE, LIKED_ONLY, DISLIKED_ONLY, CHANGES_ONLY
+    const _origSetView = setView;
+    setView = function(mode, btn) {
+      const upSec = document.getElementById('upscaleQueueSection');
+      const dirSec = document.getElementById('directorySection');
+      const reelSections = document.querySelectorAll('.reel-section');
+      const frameSections = document.querySelectorAll('.frame-section');
+
+      if (mode === 'UPSCALE_QUEUE') {
+        currentMode = mode;
+        document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+        pauseAllVideos();
+        if (upSec) upSec.style.display = 'block';
+        if (dirSec) dirSec.style.display = 'none';
+        reelSections.forEach(sec => {
+          let vis = 0;
+          sec.querySelectorAll('.reel-card').forEach(card => {
+            const it = wspReviewState.items[getItemKey(card)];
+            const show = !!(it && it.upscale);
+            card.style.display = show ? '' : 'none';
+            if (show) vis++;
+          });
+          sec.style.display = vis > 0 ? '' : 'none';
+        });
+        frameSections.forEach(sec => sec.style.display = 'none');
+        window.scrollTo({ top: upSec.offsetTop - 20, behavior: 'smooth' });
+        return;
+      }
+
+      if (upSec) upSec.style.display = 'none';
+
+      if (mode === 'LIKED_ONLY' || mode === 'DISLIKED_ONLY' || mode === 'CHANGES_ONLY') {
+        currentMode = mode;
+        document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+        pauseAllVideos();
+        if (dirSec) dirSec.style.display = 'none';
+        reelSections.forEach(sec => {
+          let vis = 0;
+          sec.querySelectorAll('.reel-card').forEach(card => {
+            const it = wspReviewState.items[getItemKey(card)];
+            let show = false;
+            if (mode === 'LIKED_ONLY') show = !!(it && it.status === 'like');
+            if (mode === 'DISLIKED_ONLY') show = !!(it && it.status === 'dislike');
+            if (mode === 'CHANGES_ONLY') show = !!(it && ((it.timestamps && it.timestamps.length > 0) || (it.note && it.note.trim().length > 0)));
+            card.style.display = show ? '' : 'none';
+            if (show) vis++;
+          });
+          sec.style.display = vis > 0 ? '' : 'none';
+        });
+        frameSections.forEach(sec => sec.style.display = 'none');
+        return;
+      }
+
+      _origSetView(mode, btn);
+    };
+
+    function generateReviewReportText() {
+      const reviewer = wspReviewState.reviewer || 'Widespread Panic Team';
+      const nowStr = new Date().toLocaleString();
+      const all = Object.values(wspReviewState.items);
+      const liked = all.filter(i => i.status === 'like');
+      const upscaled = all.filter(i => i.upscale);
+      const withChanges = all.filter(i => (i.timestamps && i.timestamps.length > 0) || (i.note && i.note.trim().length > 0));
+      const disliked = all.filter(i => i.status === 'dislike');
+
+      let lines = [];
+      lines.push('====================================================================');
+      lines.push('WIDESPREAD PANIC HALLOWEEN 2026 — TEAM REVIEW & 4K UPSCALE SELECTIONS');
+      lines.push('====================================================================');
+      lines.push(`Reviewer: ${reviewer}`);
+      lines.push(`Timestamp: ${nowStr}`);
+      lines.push(`Summary: ${liked.length} Liked Most | ${upscaled.length} Queued for 4K Upscale | ${withChanges.length} With Timestamp/Change Notes | ${disliked.length} Disliked`);
+      lines.push('');
+
+      lines.push(`--- 1. 🚀 4K UHD UPSCALE & FINAL RENDER QUEUE (${upscaled.length} LOOPS) ---`);
+      if (!upscaled.length) {
+        lines.push('  (None flagged yet)');
+      } else {
+        upscaled.forEach((it, idx) => {
+          lines.push(`  ${idx + 1}. [${it.circle}] ${it.title}`);
+          lines.push(`     File: ${it.key}`);
+          lines.push(`     Spec: ${it.upscaleSpec} | Priority: ${it.upscalePriority}`);
+          if (it.note) lines.push(`     Note: ${it.note}`);
+          if (it.timestamps && it.timestamps.length) {
+            it.timestamps.forEach(t => {
+              lines.push(`     ⏱ @ ${t.timeLabel} (${t.timeSec}s): ${t.note || '(Marked for adjustment)'}`);
+            });
+          }
+        });
+      }
+      lines.push('');
+
+      lines.push(`--- 2. 👍 LIKED MOST / FAVORITE LOOPS (${liked.length} LOOPS) ---`);
+      if (!liked.length) {
+        lines.push('  (None flagged yet)');
+      } else {
+        liked.forEach((it, idx) => {
+          lines.push(`  ${idx + 1}. [${it.circle}] ${it.title} (${it.key})${it.upscale ? ' [🚀 QUEUED FOR 4K UPSCALE]' : ''}`);
+          if (it.note) lines.push(`     Note: ${it.note}`);
+        });
+      }
+      lines.push('');
+
+      lines.push(`--- 3. ⏱ TIMESTAMPED CHANGE REQUESTS & NOTES (${withChanges.length} LOOPS) ---`);
+      if (!withChanges.length) {
+        lines.push('  (No timestamped changes marked)');
+      } else {
+        withChanges.forEach((it, idx) => {
+          lines.push(`  ${idx + 1}. [${it.circle}] ${it.title} (${it.key})`);
+          if (it.note) lines.push(`     Overall Note: ${it.note}`);
+          (it.timestamps || []).forEach(t => {
+            lines.push(`     ⏱ @ ${t.timeLabel} (${t.timeSec}s): ${t.note || '(Marked timestamp)'}`);
+          });
+        });
+      }
+      lines.push('');
+
+      lines.push(`--- 4. 👎 DISLIKED / PASS LOOPS (${disliked.length} LOOPS) ---`);
+      if (!disliked.length) {
+        lines.push('  (None flagged)');
+      } else {
+        disliked.forEach((it, idx) => {
+          lines.push(`  ${idx + 1}. [${it.circle}] ${it.title} (${it.key})${it.note ? ' — ' + it.note : ''}`);
+        });
+      }
+      lines.push('====================================================================');
+      return lines.join('\n');
+    }
+
+    function openReviewModal() {
+      const txt = generateReviewReportText();
+      const area = document.getElementById('wspModalSummaryText');
+      if (area) area.value = txt;
+      document.getElementById('wspReviewModal').classList.add('open');
+    }
+
+    function closeReviewModal() {
+      document.getElementById('wspReviewModal').classList.remove('open');
+    }
+
+    function copyReviewSummary(btn) {
+      const txt = generateReviewReportText();
+      navigator.clipboard.writeText(txt).then(() => {
+        const orig = btn.innerText;
+        btn.innerText = '✓ Copied to Clipboard!';
+        setTimeout(() => { btn.innerText = orig; }, 2200);
+      });
+    }
+
+    function sendReviewViaEmail() {
+      const reviewer = wspReviewState.reviewer || 'Widespread Panic Team';
+      const subject = encodeURIComponent(`WSP Halloween 2026 — Video Loop Selections, Timestamp Notes & 4K Upscale Queue (${reviewer})`);
+      const body = encodeURIComponent(generateReviewReportText());
+      window.location.href = `mailto:videometryvisuals@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    function downloadReviewJson() {
+      const reviewer = (wspReviewState.reviewer || 'WSP_Team').replace(/[^a-zA-Z0-9_-]+/g, '_');
+      const payload = {
+        project: 'Widespread Panic Halloween 2026',
+        reviewer: wspReviewState.reviewer || 'Widespread Panic Team',
+        exportedAt: new Date().toISOString(),
+        summaryReport: generateReviewReportText(),
+        state: wspReviewState
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `WSP_Halloween_2026_Review_${reviewer}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    function downloadReviewTxt() {
+      const reviewer = (wspReviewState.reviewer || 'WSP_Team').replace(/[^a-zA-Z0-9_-]+/g, '_');
+      const blob = new Blob([generateReviewReportText()], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `WSP_Halloween_2026_Review_${reviewer}.txt`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    function importReviewJson(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          const newState = parsed.state || parsed;
+          if (newState && newState.items) {
+            wspReviewState = newState;
+            const revInput = document.getElementById('wspReviewerName');
+            if (revInput) revInput.value = wspReviewState.reviewer || '';
+            document.querySelectorAll('.reel-card').forEach(c => {
+              renderCardReviewUI(c, getItemKey(c));
+            });
+            saveWspReviewState();
+            alert('Loaded Team Review selections (' + Object.keys(wspReviewState.items).length + ' items)!');
+          }
+        } catch (err) {
+          alert('Could not parse Review JSON file.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadWspReviewState();
+      injectReviewPanelsOntoCards();
+      updateAllReviewCountsAndTables();
+    });
+  </script>
+
 </body>
 </html>
