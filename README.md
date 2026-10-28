@@ -1,26 +1,18 @@
-# Widespread Panic — Halloween 2026 ("The Nine Circles of Hell")
-## Client Preview Package (`720p @ 24 fps` Bespoke Review Pass + `4K UHD` Style Frames)
+# Widespread Panic Halloween 2026 — Master Client Preview Package (Additive Update: Oct 27, 2026)
 
-**Creator:** Dustin Klein / Videometry Visuals LLC  
-**Assigned Circles:** Circle III (*Gluttony*), Circle VI (*Heresy*), Circle VIII (*Fraud*) + Cross-Circle *Sacred Geometry Vèvè Seals*, *Dante's Infernal Tarot Deck* & *1880 French Court & Transformation Playing Cards*  
-**Video Review Specs:** `1280 × 720` (`720p`), `24.00 fps`, H.264 (`yuv420p`), Video-Only (`audio=0`), Seamless Hard-Cut Loops (`VV Flow Long Loop Assembler`, zero cross-dissolves)  
-**Target Final Mastering Resolution:** `3840 × 2160` (`4K UHD`, 16:9) with center-safe framing for the `3888 × 1728` (`9:4`) UNO Arena V3 LED Wall
+- **Main Interactive Gallery (Portable):** `CLIENT_PREVIEW_SCREENING_ROOM.html`
+- **Root Best-of-Show Gallery:** `../../WSP_HALLOWEEN_2026_CLIENT_PREVIEW_BEST_OF_SHOW.html`
+- **Total Package Contents:** **105 Main Reels** + **74 4K Style Frames & Proof Sheets** + **13 Bonus Archival/Carving Extras** + **4 Native After Effects 2026 `.aep` Projects**
 
----
-
-## Quick-Start Viewing Guide
-
-1. **Live Web Screening Room (Instant Browser Streaming):**
-   - **https://videometry.github.io/wsp-halloween-2026-preview/**
-   - Or open `CLIENT_PREVIEW_SCREENING_ROOM.html` locally in any web browser.
-   - Opens in **★ Top 15 Director's Cut (Quick Tour)** mode showing only the flagship bespoke loops across all 6 main suites.
-   - Use the top filter bar to browse **All 55 Bespoke Main Reels**, filter by Circle / Suite, inspect the **36 Native 4K UHD (`3840×2160`) Style Frames**, or click **"Toggle UNO Arena 9:4 Wall Safe-Zone (`3888×1728`)"** to preview the exact `9:4` stage crop margin.
-
-2. **Direct Folder Navigation (55 Bespoke `720p @ 24 fps` Main Loops + 36 `4K UHD` Style Frames):**
-   - `01_Circle_III_Gluttony_Previews/` — **15 bespoke `720p @ 24 fps` hard-cut loops** (7 full-length `75s–93s` 10-to-12-step Gluttony Master Loops led by *The Hardware Crawfish Saga* + all 8 Bourbon Street Banquet, Bacchus & Food Cathedral loops) + **6 `3840×2160` 4K UHD style frames**
-   - `02_Circle_VI_Heresy_Previews/` — **8 bespoke `720p @ 24 fps` hard-cut loops** (all 8 *Snake Woman, Serpent Saint & Cathedral of Forbidden Knowledge* loops) + **6 `3840×2160` 4K UHD style frames**
-   - `03_Circle_VIII_Fraud_Previews/` — **8 bespoke `720p @ 24 fps` hard-cut loops** (all 8 *Snake Oil Medicine Show, Voodoo Apothecary & Carnival of Deception* loops) + **6 `3840×2160` 4K UHD style frames**
-   - `04_Cross_Circle_Veve_Seals_Previews/` — **8 bespoke `720p @ 24 fps` hard-cut loops** (all 8 *Sacred Geometry, Vèvè Crossroads & Esoteric Seals* loops) + **6 `3840×2160` 4K UHD style frames**
-   - `05_Cross_Circle_Infernal_Tarot_Deck_Previews/` — **8 bespoke `720p @ 24 fps` hard-cut loops** (all 8 *Dante's Infernal Tarot Deck — 2D Woodcut, Visconti Gold-Leaf & Paper-Cutout Arcana* loops) + **6 `3840×2160` 4K UHD style frames**
-   - `06_Cross_Circle_French_Court_Cards_Previews/` — **8 bespoke `720p @ 24 fps` hard-cut loops** (all 8 *19th-Century French Court & Transformation Playing Cards — B. P. Grimaud c. 1880 & Early-1800s Paris Pattern* loops) + **6 `3840×2160` 4K UHD style frames**
-   - *(Optional Extras: `07_Bonus_Archival_and_Public_Domain_Extras/` contains 6 supplemental public-domain engraving & luma-key overlay studies, separated from the main showcase.)*
+## Folder Structure (100% Additive — All V1 Originals Preserved + All New Suites Added)
+1. `00_Oct27_Client_Feedback_Remediated_Cuts/` — **10 Remediated & v5 2D Cel-Animated Master Loops** addressing Andrew Smith's Oct 27 review notes (`Terminal Gluttony V2`, `The Rite of Indulgence V2 2D Cel-Animated`, `The Serpent Saint V2 2D Cel-Animated`, `Three-Scale Heresy Show Arc V2`, `Hardware Crawfish V2`, `Hall of the Beignet Eyes V2`, `King Cake Parade V2`, `The Primal Glisten V2`, `Original 12-Step Banquet V2`, `Snake Woman Anthology V2`) + 6 Proof & 4K Style Frames.
+2. `01_Circle_III_Gluttony_Previews/` — **15 Original V1 Gluttony Loops** (7 10–12 Step Master Loops + 8 Bourbon Banquet & Bacchus Loops) + 6 Native 4K UHD Style Frames.
+3. `02_Circle_VI_Heresy_Previews/` — **8 Original V1 Heresy Snake Woman & Cathedral Loops** + 6 Native 4K UHD Style Frames.
+4. `03_Circle_VIII_Fraud_Previews/` — **8 Fraud Snake Oil, Apothecary & Geryon Loops** + 6 Native 4K UHD Style Frames.
+5. `04_Cross_Circle_Veve_Seals_Previews/` — **8 New Orleans Sacred Geometry & Vèvè Portal Loops** + 6 Native 4K UHD Style Frames.
+6. `05_Cross_Circle_Infernal_Tarot_Deck_Previews/` — **8 Dante's Infernal Tarot Deck Loops** + 6 Native 4K UHD Style Frames.
+7. `06_Cross_Circle_French_Court_Cards_Previews/` — **8 1880 B. P. Grimaud French Court & Transformation Playing Card Loops** + 6 Native 4K UHD Style Frames.
+8. `08_Flat_Printmaking_Scenic_Panoramas/` — **7 New 8-Stage Flat-Printmaking Scenic Panorama Loops** (Gluttony Woodblock 1X/2X, Heresy Stained-Glass 1X/2X, Fraud Paper-Theater 1X/2X, and 24-Clip 3-Circle Anthology) + 10 Contact Sheets & Keyframe Illustrations.
+9. `09_After_Effects_Stagecraft_and_Rigs/` — **16 Rendered 1080p @ 24fps After Effects Non-AI & Hybrid Stagecraft Loops** across all 4 AE Directions (2.5D Shadowbox Stagecraft, Procedural Vector Sacred Geometry Rigs, Hybrid Composite-First Lithograph Portals, Hypnotic Concert Symmetry & 3D Frieze Tunnels) + **4 Native `.aep` Projects** + 6 Proof & Contact Sheets.
+10. `10_Cosmic_Geometry_and_Vortex_Previews/` — **8 Cosmic Geometry, Ophanim Wheels & Pineal Vortex Loops** + 6 Native 4K UHD Style Frames.
+11. `07_Bonus_Archival_and_Public_Domain_Extras/` — **13 Supplemental B-Roll, Pure Carvings & Luma-Key Overlay Loops**.
